@@ -79,7 +79,7 @@ const About = () => {
           {/* Team Member 1 */}
           <div className="team-profile">
             <div className="team-left">
-              <img src="public/img/profile1.jpg" alt="Jason Sir" />
+              <img src="/img/profile1.jpg" alt="Jason Sir" />
             </div>
             <div className="team-right">
               <h2 className="team-name">Pushparaj jaison</h2>
