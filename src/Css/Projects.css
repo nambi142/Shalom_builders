@@ -1,0 +1,236 @@
+/* ------------------------------
+   PROJECTS HERO SECTION
+------------------------------ */
+.projects-hero {
+  background: url('/img/billy-freeman-V38rMuljw2Y-unsplash.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+}
+
+.projects-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+.projects-hero-content {
+  position: relative;
+  z-index: 2;
+  font-family: "Sansation", sans-serif;
+}
+
+.projects-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.projects-breadcrumb {
+  font-size: 16px;
+}
+
+.projects-home-link {
+  color: #f5c518;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projects-separator {
+  margin: 0 8px;
+  color: #fff;
+}
+
+
+/* ------------------------------
+   PROJECTS PAGE BODY
+------------------------------ */
+.projects-body {
+  padding: 80px 20px;
+  background: #fff;
+  font-family: "Sansation", sans-serif;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a1f44;
+  margin-bottom: 15px;
+}
+
+.projects-intro {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 50px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ------------------------------
+   PROJECTS GRID (namespaced with p-)
+------------------------------ */
+.p-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Responsive: 2 columns centered only on tablet/mobile */
+@media (max-width: 1024px) {
+  .p-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .p-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .p-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+
+/* ------------------------------
+   PROJECT CARD (namespaced with p-)
+------------------------------ */
+.p-project-card {
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.p-project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.p-project-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.p-project-card-content {
+  background: #fff;
+  padding: 18px 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 92% 100%, 0% 100%);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect → orange */
+.p-project-card:hover .p-project-card-content {
+  background: #f36c21;
+  color: #fff;
+}
+
+/* Title + Desc */
+.p-project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0a1f44;
+  transition: color 0.3s ease;
+}
+.p-project-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+.p-project-card:hover .p-project-title,
+.p-project-card:hover .p-project-desc {
+  color: #fff;
+}
+
+/* Button */
+.p-project-btn {
+  margin-top: auto;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.p-project-btn:hover {
+  background: #fff;
+  color: #f36c21;
+}
+
+/* ------------------------------
+   LOADER (Spinner Animation)
+------------------------------ */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  grid-column: 1 / -1; /* Center across grid */
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light gray */
+  border-top: 6px solid #f36c21; /* Orange brand color */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-container p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  font-family: "Sansation", sans-serif;
+}
+
