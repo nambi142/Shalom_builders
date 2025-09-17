@@ -53,7 +53,7 @@ const About = () => {
           </div>
           <div className="company-right">
             <img
-              src="public/img/about-us.jpg"
+              src="/img/about-us.jpg"
               alt="Shalom Builders"
               className="company-img"
             />
@@ -116,7 +116,7 @@ const About = () => {
           {/* Team Member 2 */}
           <div className="team-profile">
             <div className="team-left">
-              <img src="public/img/DSC05037.JPG" alt="Micaiah Sharon" />
+              <img src="/img/DSC05037.JPG" alt="Micaiah Sharon" />
             </div>
             <div className="team-right">
               <h2 className="team-name">Micaiah Sharon</h2>

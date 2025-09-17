@@ -88,7 +88,7 @@ const Header = () => {
             </a>
             <span className="pipe">|</span>
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:Shalombuilderstvl@gmail.com"
               className="social-icon"
               aria-label="email"
             >
