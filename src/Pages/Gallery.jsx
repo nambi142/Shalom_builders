@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { db } from "../Firebase";
 import { doc, getDoc } from "firebase/firestore";
-import "../Css/Gallery.css";
+import "../Css/ViewGallery.css";
 
 const Gallery = () => {
   const { id } = useParams(); // project id from URL

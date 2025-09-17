@@ -6,22 +6,22 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const projects = [
     {
-      img: "public/project-img/jam-nagar.jpg",
+      img: "/project-img/jam-nagar.jpg",
       title: "Modern Luxury Villa",
       category: "Architecture | Building",
     },
     {
-      img: "public/project-img/IMG20240729131020.jpg",
+      img: "/project-img/IMG20240729131020.jpg",
       title: "Modern Farmhouse",
       category: "Interior | Design",
     },
     {
-      img: "public/project-img/shed-works-ground.jpg",
+      img: "/project-img/shed-works-ground.jpg",
       title: "Shed Roof",
       category: "Architecture | Landscape",
     },
     {
-      img: "public/project-img/terres-roofing.jpg",
+      img: "/project-img/terres-roofing.jpg",
       title: "Rooftop Terrace",
       category: "Luxury | Outdoor",
     },
