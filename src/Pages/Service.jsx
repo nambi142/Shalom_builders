@@ -74,7 +74,7 @@ const Service = () => {
               </p>
               <div className="service-img-box">
                 <img
-                  src="public/img/interior-design.jpg"
+                  src="/img/interior-design.jpg"
                   alt="Interior & Decoration"
                 />
               </div>
@@ -92,7 +92,7 @@ const Service = () => {
               </p>
               <div className="service-img-box">
                 <img
-                  src="public/img/renovation.jpg"
+                  src="/img/renovation.jpg"
                   alt="Renovation & Remodeling"
                 />
               </div>
@@ -109,7 +109,7 @@ const Service = () => {
                 flawless execution.
               </p>
               <div className="service-img-box">
-                <img src="public/img/plumbing.jpg" alt="Plumbing & Drawings" />
+                <img src="/img/plumbing.jpg" alt="Plumbing & Drawings" />
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const Service = () => {
               </p>
               <div className="service-img-box">
                 <img
-                  src="public/img/planappruval.jpg"
+                  src="/img/planappruval.jpg"
                   alt="Plan Approval & Design"
                 />
               </div>
@@ -143,7 +143,7 @@ const Service = () => {
               </p>
               <div className="service-img-box">
                 <img
-                  src="public/img/3d-design.jpg"
+                  src="/img/3d-design.jpg"
                   alt="Architectural Plan & 3D Design"
                 />
               </div>
@@ -163,7 +163,7 @@ const Service = () => {
               </p>
               <div className="service-img-box">
                 <img
-                  src="public/img/commercial.jpg"
+                  src="/img/commercial.jpg"
                   alt="Residential & Commercial Construction"
                 />
               </div>

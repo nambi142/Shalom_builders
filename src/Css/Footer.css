@@ -210,3 +210,15 @@
     text-align: left;
   }
 }
+
+/* Fix for mobile view: move scroll button away from copyright */
+@media (max-width: 600px) {
+  .scroll-top-btn {
+    right: 15px;     /* stay at right end */
+    bottom: 60px;    /* add gap above copyright */
+    top: auto;       /* reset top positioning */
+    transform: none; /* remove vertical centering */
+  }
+}
+
+
