@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  font-family: Arial, sans-serif;
+  
 }
 
 /* First Row */
@@ -69,10 +69,8 @@
   align-items: center;
   background: #ffffff91;
   padding: 10px 35px;
-  height: 100px;
-  border-bottom: 1px solid #dbdbdb;
+  height: 90px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
   /* make row 2 stick to top on scroll for all screen sizes */
   position: sticky;
   top: 0;
@@ -94,9 +92,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Sansation", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  line-height: 22px;
 }
 
 .company-text h2 {
@@ -104,14 +100,13 @@
   font-weight: 800;
   color: brown;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.50px;
 }
 
 .company-text h3 {
   font-size: 13px;
   font-weight: 600;
   color: navy;
-  margin: 2px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +115,7 @@
 }
 
 .company-text .dove-icon {
-  font-size: 13px;
+  font-size: 10px;
   color: navy;   /* navy as requested */
   transform: scaleX(-1); /* mirror horizontally */
 }
@@ -286,8 +281,12 @@
 /* ✅ Mobile specific fixes for logo + text */
 @media (max-width: 768px) {
   .logo-container img {
-    height: 42px;
+    height: 40px;
     width: auto;
+  }
+
+  .company-text {
+    line-height: 20px;
   }
 
   .company-text h2 {
@@ -298,11 +297,7 @@
   .company-text h3 {
     font-size: 11px;
     gap: 4px;
-    letter-spacing: 1px;
-  }
-
-  .company-text .dove-icon {
-    font-size: 11px;
+    letter-spacing: 0.5px;
   }
 
   .header-bottom {

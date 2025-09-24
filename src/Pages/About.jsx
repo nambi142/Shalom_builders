@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/About.css"; // custom About CSS
+import "../Css/About.css"; 
 import {
   FaBuilding,
   FaUsers,
@@ -27,29 +27,28 @@ const About = () => {
       <section className="company-section">
         <div className="company-container">
           <div className="company-left">
-            <h2>Our Company</h2>
+            <h2>About</h2>
             <p>
-              At Shalom Builders, we believe in creating structures that last a
-              lifetime. With a commitment to quality craftsmanship and customer
-              satisfaction, we specialize in delivering residential, commercial,
-              and industrial projects that stand as a symbol of trust and
-              excellence.
+              At <strong>Shalom Builders</strong>, we are passionate about
+              building more than just structures – we build trust, value, and
+              long-term relationships. As a top-rated construction company in
+              Tirunelveli, we specialize in
+              <strong> residential, commercial, and government projects</strong>,
+              offering complete end-to-end solutions from design to handover.
+              With a team of experienced civil engineers, architects, and
+              skilled workers, we combine <strong>modern technology</strong>,
+              quality materials, and innovative design to deliver projects that
+              are durable, cost-effective, and aesthetically appealing.
             </p>
 
-            <p>
-              Whether it’s building your dream home, renovating spaces, or
-              undertaking large-scale projects, our experienced team ensures
-              every detail is crafted to perfection.
-            </p>
-
-            <p>
-              In addition to construction, Shalom Builders is also a trusted
-              name in <strong>Real Estate</strong>. We help clients buy, sell,
-              and invest in properties with transparency and professionalism.
-              From premium residential plots to commercial spaces, we guide you
-              through every step to make property ownership simple, secure, and
-              rewarding.
-            </p>
+            <h3>Why Clients Choose Us</h3>
+            <ul>
+              <li>Expertise in residential & commercial building projects</li>
+              <li>Turnkey construction solutions – from planning to interiors</li>
+              <li>Use of standard materials & modern techniques</li>
+              <li>Transparent pricing & on-time completion</li>
+              <li>Personalized designs to suit every client’s needs</li>
+            </ul>
           </div>
           <div className="company-right">
             <img
@@ -63,108 +62,116 @@ const About = () => {
 
       {/* Team Section */}
       <section className="team-section">
-        <div className="team-container">
-          {/* Heading */}
-          <div className="team-heading">
-            <h3 className="team-subtitle">Our Team</h3>
-            <h2 className="team-title">Meet Our Professional Experts</h2>
-            <p className="team-intro">
-              Our dedicated professionals are the backbone of Shalom Builders.
-              With years of experience and a commitment to excellence, our team
-              ensures that every project is completed with precision,
-              innovation, and trust. Together, we bring your vision to life.
+        <div className="team-heading">
+          <h3 className="team-subtitle">Our Team</h3>
+          <h2 className="team-title">Meet Our Professional Experts</h2>
+          <p className="team-intro">
+            Our dedicated professionals are the backbone of Shalom Builders.
+            With years of experience and a commitment to excellence, our team
+            ensures that every project is completed with precision,
+            innovation, and trust. Together, we bring your vision to life.
+          </p>
+        </div>
+
+        {/* Team Member 1 */}
+        <div className="team-profile">
+          <div className="team-left">
+            <img src="/img/profile1.jpg" alt="Pushparaj Jaison" />
+          </div>
+          <div className="team-right">
+            <h2 className="team-name">Pushparaj Jaison</h2>
+            <h4 className="team-role">Proprietor</h4>
+            <p className="team-description">
+              With a vision to deliver quality-driven construction and interior solutions, <strong>Mr. Jaison</strong>  leads shalom builders with dedication, integrity, and a client-first approach. He ensures every project is completed with excellence, transparency, and timely execution. He Brings strong expertise in construction management, business development, and client relations. With a commitment to quality, innovation, and transparency, he ensures every project is delivered on time with the highest standards
             </p>
+
+            <ul className="team-info">
+              <li>
+                <strong>Mobile:</strong>{" "}
+                <a href="tel:+917449152333">+91 74491 52333</a>
+              </li>
+              <li>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:Shalombuilderstvl@gmail.com">
+                  Shalombuilderstvl@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong>Experience:</strong> 15 Years
+              </li>
+              <li>
+                <strong>Availability:</strong> Full Time
+              </li>
+            </ul>
           </div>
+        </div>
 
-          {/* Team Member 1 */}
-          <div className="team-profile">
-            <div className="team-left">
-              <img src="/img/profile1.jpg" alt="Jason Sir" />
-            </div>
-            <div className="team-right">
-              <h2 className="team-name">Pushparaj jaison</h2>
-              <h4 className="team-role">Proprietor</h4>
-              <p className="team-description">
-                A construction engineer is a professional responsible for
-                planning, design, managing, and overseeing construction
-                projects. They play a crucial role in ensuring projects are
-                executed efficiently, safely, and in compliance with engineering
-                standards and regulations.
-              </p>
-
-              <ul className="team-info">
-                <li>
-                  <strong>Mobile Number:</strong>{" "}
-                  <a href="tel:+917449152333">+91 74491 52333</a>
-                </li>
-                <li>
-                  <strong>Email:</strong>{" "}
-                  <a href="mailto:Shalombuilderstvl@gmail.com">
-                    Shalombuilderstvl@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <strong>Experience:</strong> 15 Years
-                </li>
-                <li>
-                  <strong>Availability:</strong> Full Time
-                </li>
-              </ul>
-            </div>
+        {/* Team Member 2 */}
+        <div className="team-profile">
+          <div className="team-left">
+            <img src="/img/profile2.jpg" alt="Micaiah Sharon" />
           </div>
+          <div className="team-right">
+            <h2 className="team-name">Micaiah Sharon</h2>
+            <h4 className="team-role">Project Manager</h4>
+            <p className="team-description">
+              Mr. Micaiah plays a key role in supporting the planning,
+              coordination, and execution of projects. By assisting in data
+              management, reporting, and resource allocation, he ensures
+              smooth day-to-day operations at site.
+            </p>
 
-          {/* Team Member 2 */}
-          <div className="team-profile">
-            <div className="team-left">
-              <img src="/img/DSC05037.JPG" alt="Micaiah Sharon" />
-            </div>
-            <div className="team-right">
-              <h2 className="team-name">Micaiah Sharon</h2>
-              <h4 className="team-role">Project Manager</h4>
-              <p className="team-description">
-                A construction project manager coordinates design, resources,
-                and deadlines to deliver projects on time and within budget
-                while ensuring quality and client satisfaction.
-              </p>
+            <h4 className="team-role-sub">Key Skills & Qualities:</h4>
+            <ul className="team-skills">
+              <li>Assists in project scheduling and documentation</li>
+              <li>Supports data entry, analysis, and progress tracking</li>
+              <li>Coordinates between teams, vendors, and clients</li>
+              <li>Ensures quality checks and compliance with standards</li>
+              <li>Skilled in time management and on-site coordination</li>
+              <li>Contributes to a collaborative and efficient work environment</li>
+            </ul>
 
-              <ul className="team-info">
-                <li>
-                  <strong>Mobile Number:</strong>{" "}
-                  <a href="tel:+918190859587">+91 81908 59587</a>
-                </li>
-                <li>
-                  <strong>Email:</strong>{" "}
-                  <a href="mailto:micaiahsharon@gmail.com">
-                    micaiahsharon@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <strong>Experience:</strong> 02 Years
-                </li>
-                <li>
-                  <strong>Availability:</strong> Full Time
-                </li>
-              </ul>
+            <ul className="team-info">
+              <li>
+                <strong>Mobile:</strong>{" "}
+                <a href="tel:+918190859587">+91 81908 59587</a>
+              </li>
+              <li>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:micaiahsharon@gmail.com">
+                  micaiahsharon@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong>Experience:</strong> 2 Years
+              </li>
+              <li>
+                <strong>Availability:</strong> Full Time
+              </li>
+            </ul>
 
-              <div className="team-socials">
-                <a
-                  href="https://www.instagram.com/micaiah_sharon/?igsh=MWl4YjNscGZtNXhhNQ%3D%3D#"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram />
-                </a>
-                <a href="https://www.linkedin.com/in/micaiah-s-90b1271a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
-                  <FaLinkedinIn />
-                </a>
-                <a
-                  href="https://wa.me/918190859587"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaWhatsapp />
-                </a>
-              </div>
+            <div className="team-socials">
+              <a
+                href="https://www.instagram.com/micaiah_sharon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/micaiah-s-90b1271a4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://wa.me/918190859587"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
         </div>

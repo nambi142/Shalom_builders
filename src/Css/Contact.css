@@ -66,7 +66,7 @@
 .contact-container h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #0a1f44; /* navy blue */
+  color: #0a1f44; 
   margin-bottom: 15px;
 }
 
@@ -123,13 +123,13 @@
 .contact-info-box p {
   font-size: 15px;
   margin: 5px 0;
-  color: #fff;           /* always white */
+  color: #fff;           
   transition: color 0.3s ease;
-  cursor: pointer;       /* make cursor show pointer */
+  cursor: pointer;       
 }
 
 .contact-info-box p:hover {
-  color: #fbbf24;        /* gold hover effect */
+  color: #fbbf24;      
 }
 
 .contact-info-box a {
@@ -210,51 +210,27 @@
   transform: translateY(-2px);
 }
 
-/* ---------- CONTACT IMAGE ANIMATION ---------- */
+/* ---------- CONTACT IMAGE ANIMATION (Responsive) ---------- */
 .contact-image img {
-  width: 100%;
+  width: 100%;           /* Full width of the container */
+  max-width: 500px;      /* Prevent it from being too large */
+  height: auto;          /* Maintain aspect ratio */
+  max-height: 400px;     /* Limit height if needed */
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: cover;     /* Ensures image covers the space without distortion */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   animation: floatJCB 4s ease-in-out infinite;
-}
-/* ---------- CONTACT IMAGE ANIMATION ---------- */
-.contact-image img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  animation: floatJCB 4s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;        /* Center the image */
 }
 
-@keyframes floatJCB {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px); /* moves up slightly */
-  }
-  100% {
-    transform: translateY(0px);
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .contact-image img {
+    max-width: 90%;      /* Slightly smaller on mobile */
+    max-height: 300px;   /* Reduce height for small screens */
   }
 }
-
-@keyframes swingJCB {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-2deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.contact-image img {
-  animation: swingJCB 3s ease-in-out infinite;
-}
-
 
 
 /* ---------- RESPONSIVE FORM ---------- */

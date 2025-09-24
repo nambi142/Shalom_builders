@@ -131,7 +131,7 @@ const Contact = () => {
 
             {/* Right - Image */}
             <div className="contact-image">
-              <img src="/img/page-header-shape1.png" alt="Contact Illustration" />
+              <img src="/img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg" alt="Contact Illustration" />
             </div>
           </div>
         </div>

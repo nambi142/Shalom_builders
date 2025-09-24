@@ -1,11 +1,9 @@
 .about-wrapper {
-  font-family: "Sansation", sans-serif;
-  color: #333;
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
 }
 
-/* =========================================================
-   HERO SECTION
-========================================================= */
+/* HERO SECTION */
 .about-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("/img/3d-design.jpg") center/cover no-repeat;
@@ -33,73 +31,129 @@
   text-decoration: underline;
 }
 
-/* =========================================================
-   COMPANY SECTION
-========================================================= */
+/* COMPANY SECTION */
 .company-section {
-  padding: 30px 50px;
-  background: #fff;
+  padding: 60px 20px;
+  background: #f9fafb;
 }
 
 .company-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: auto;
-  gap: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .company-left {
   flex: 1;
+  min-width: 320px;
 }
 
 .company-left h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 20px;
   color: #0a1f44;
-  border-left: 5px solid #fbbf24;
-  padding-left: 10px;
+  border-left: 6px solid #fbbf24;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+.company-left h3 {
+  margin-top: 25px;
+  font-size: 22px;
+  color: #0a1f44;
+  position: relative;
+}
+
+.company-left h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50px;
+  height: 3px;
+  background: #fbbf24;
+  border-radius: 2px;
 }
 
 .company-left p {
   line-height: 1.8;
   margin-bottom: 15px;
-  color: #555;
+  color: #444;
+  font-size: 16px;
+}
+
+.company-left ul {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.company-left ul li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  color: #333;
+  font-size: 16px;
+}
+
+.company-left ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
 }
 
 .company-right {
   flex: 1;
-  text-align: right;
+  text-align: center;
+  min-width: 300px;
 }
 
 .company-img {
   max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* =========================================================
-   TEAM SECTION (Enhanced with Animations)
-========================================================= */
+@media (max-width: 992px) {
+  .company-container {
+    flex-direction: column;
+  }
+  .company-left h2 {
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 4px solid #fbbf24;
+    display: inline-block;
+  }
+  .company-right {
+    margin-top: 30px;
+  }
+}
 
-/* Team Section Heading */
+/* TEAM SECTION */
+.team-section {
+  padding: 20px 80px;   
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
 .team-heading {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  animation: fadeInDown 1s ease-in-out;
 }
 
 .team-subtitle {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 700;
   color: #fbbf24;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .team-title {
@@ -115,67 +169,31 @@
   color: #555;
 }
 
-/* Section Wrapper */
-.team-section {
-  padding: 90px 20px;
-  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
-}
-
-/* Container */
-.team-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-/* Profile Card Layout */
 .team-profile {
   display: flex;
   align-items: flex-start;
   gap: 40px;
   border-bottom: 1px solid #eee;
   padding-bottom: 40px;
-  animation: fadeUp 1.2s ease forwards;
-  opacity: 0;
+  margin-bottom: 40px;
 }
 
-.team-profile:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.team-profile:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-/* Profile Image */
 .team-left img {
   width: 320px;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.team-left img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-}
-
-/* Profile Content */
 .team-right {
   flex: 1;
-  animation: fadeInRight 1.2s ease forwards;
-  opacity: 0;
 }
 
 .team-name {
   font-size: 28px;
   font-weight: 700;
   color: #0a1f44;
-  margin-bottom: 8px;
 }
 
 .team-role {
@@ -192,7 +210,6 @@
   margin-bottom: 20px;
 }
 
-/* Info List */
 .team-info {
   list-style: none;
   padding: 0;
@@ -210,7 +227,36 @@
   margin-right: 5px;
 }
 
-/* Social Links */
+.team-role-sub {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #0a1f44;
+}
+
+.team-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.team-skills li {
+  margin-bottom: 8px;
+  padding-left: 26px;
+  position: relative;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.team-skills li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
+}
+
 .team-socials {
   display: flex;
   gap: 15px;
@@ -227,96 +273,82 @@
   transform: translateY(-3px) scale(1.1);
 }
 
-/* ================= Animations ================== */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
+/* Tablet (max 900px) */
+@media (max-width: 900px) {
+  .team-section {
+    padding: 100px 30px;   /* reduce side padding on tablets */
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .team-profile {
+    gap: 20px;
+  }
+
+  .team-left img {
+    width: 240px;
+    height: auto;
+  }
+
+  .team-name {
+    font-size: 24px;
+  }
+
+  .team-role {
+    font-size: 14px;
   }
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+  .team-section {
+    padding: 80px 20px;   /* compact padding on mobile */
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* ================= Responsive ================== */
-@media (max-width: 768px) {
   .team-profile {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 25px;
   }
 
   .team-left img {
     width: 100%;
-    height: auto;
-    max-width: 350px;
-  }
-
-  .team-right {
-    animation: fadeInUp 1s ease forwards;
-  }
-}
-
-
-/* Responsive */
-@media (max-width: 900px) {
-  .team-profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .team-left img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 280px;
     margin: 0 auto;
   }
 
   .team-right {
+    width: 100%;
+    text-align: left;   /* keep text left aligned */
+  }
+
+  .team-name,
+  .team-role{
     text-align: center;
+  }
+  .team-skills{
+     text-align: left;
+  }
+
+  .team-description,
+  .team-info{
+    text-align: center;   /* ensure all text stays left */
   }
 
   .team-socials {
-    justify-content: center;
+    justify-content: center;  /* socials align left */
   }
 }
 
-/* =========================================================
-   ACHIEVEMENTS SECTION
-========================================================= */
+
+
+/* ACHIEVEMENTS SECTION */
 .achievements-section {
   position: relative;
-  background: url("/public/img/achievements-bg.jpg") no-repeat center center/cover;
+  background: url("/img/achievements-bg.jpg") no-repeat center/cover;
   padding: 100px 20px;
   text-align: center;
   color: #fff;
-  overflow: hidden;
 }
 
-/* Overlay */
 .achievements-section::before {
   content: "";
   position: absolute;
@@ -324,14 +356,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 31, 68, 0.85); /* Navy overlay */
+  background: rgba(10, 31, 68, 0.85);
   z-index: 0;
 }
 
 .achievements-container {
   position: relative;
   z-index: 1;
-  animation: fadeInUp 1.2s ease-in-out;
 }
 
 .achievements-subtitle {
@@ -340,17 +371,12 @@
   color: #fbbf24;
   margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
 }
 
 .achievements-title {
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 50px;
-  opacity: 0;
-  animation: fadeIn 1.8s ease forwards;
 }
 
 .achievements-grid {
@@ -361,22 +387,13 @@
   margin: 0 auto;
 }
 
-/* Achievement Cards */
 .achievement-card {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 30px 20px;
   backdrop-filter: blur(6px);
-  opacity: 0;
-  transform: translateY(30px);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: fadeUp 1s ease forwards;
 }
-
-.achievement-card:nth-child(1) { animation-delay: 0.4s; }
-.achievement-card:nth-child(2) { animation-delay: 0.7s; }
-.achievement-card:nth-child(3) { animation-delay: 1s; }
-.achievement-card:nth-child(4) { animation-delay: 1.3s; }
 
 .achievement-card:hover {
   transform: translateY(-12px) scale(1.03);
@@ -387,7 +404,6 @@
   font-size: 42px;
   color: #fbbf24;
   margin-bottom: 15px;
-  animation: bounce 2s infinite;
 }
 
 .achievement-card h3 {
@@ -402,58 +418,15 @@
   color: #ddd;
 }
 
-/* =========================================================
-   KEYFRAMES
-========================================================= */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(60px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 @media (max-width: 768px) {
-  /* Company */
-  .company-container {
-    flex-direction: column;
-    text-align: start;
-  }
-  .company-right { text-align: center; }
-  .company-left h2 {
-    text-align: center;
-    border-left: none;
-    border-bottom: 3px solid #fbbf24;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-
-  /* Team */
-  .team-title {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-  /* Achievements */
   .achievements-title {
     font-size: 24px;
     margin-bottom: 30px;
   }
-  .achievement-card h3 { font-size: 22px; }
-  .achievement-icon { font-size: 34px; }
+  .achievement-card h3 {
+    font-size: 22px;
+  }
+  .achievement-icon {
+    font-size: 34px;
+  }
 }

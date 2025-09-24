@@ -86,7 +86,7 @@
   display: inline-block;
   width: 70px;
   height: 2px;
-  background: #e9e9e9;
+  background: #000000;
   border-radius: 2px;
 }
 
@@ -104,7 +104,7 @@
 
 .deco-house-icon {
   font-size: 18px;
-  color: #f0b24a;
+  color: #ffa200;
 }
 
 /* Subtitle */
@@ -194,7 +194,7 @@
   width: 100%;
   text-align: center;
   color: #fff;
-  font-family: "Sansation", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   font-style: normal;
 }

@@ -61,9 +61,10 @@ const Footer = () => {
             <h2>SHALOM BUILDERS</h2>
           </div>
           <p>
-            Today we can tell you, thanks to your passion, hard work creativity,
-            and expertise, you delivered us the most beautiful house great
-            looks.
+            Welcome to Shalom Builders – Trusted Construction & Interior
+            Solutions At Tirunelveli and Tamilnadu, we specialize in delivering
+            high-quality construction services, residential projects, commercial
+            buildings, and modern interior design solutions.
           </p>
           <div className="footer-social">
             <a
@@ -100,8 +101,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <MdLocationOn className="icon" /> Pallivasal complex, 1 upstairs,
-                Water Tank Rd, Palayamkottai, Tirunelveli, Tamil Nadu 627011
+                <MdLocationOn className="icon" /> Pallivasal complex, 1
+                upstairs, Water Tank Rd, Palayamkottai, Tirunelveli, Tamil Nadu
+                627011
               </a>
             </li>
             <li>

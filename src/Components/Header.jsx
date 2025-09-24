@@ -6,7 +6,6 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaDove,
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -115,7 +114,7 @@ const Header = () => {
             <div className="company-text">
               <h2>SHALOM BUILDERS</h2>
               <h3>
-                IN GOD WE TRUST <FaDove className="dove-icon" />
+                IN GOD WE TRUST 
               </h3>
             </div>
           </div>
