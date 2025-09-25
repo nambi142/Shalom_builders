@@ -1,0 +1,311 @@
+/* ---------- CAREERS HERO ---------- */
+.careers-hero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: url("/img/planappruval.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+}
+
+.careers-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.careers-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.careers-title {
+  font-size: 42px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  font-family: "Sansation", sans-serif;
+  color: #fff;
+}
+
+.careers-breadcrumb {
+  font-size: 16px;
+  font-family: "Sansation", sans-serif;
+  color: #fbbf24;
+}
+
+.careers-separator {
+  margin: 0 6px;
+}
+
+.breadcrumb-link {
+  color: #fbbf24;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ---------- CAREERS BODY ---------- */
+.careers-body {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  font-family: "Sansation", sans-serif;
+}
+
+.careers-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 15px;
+}
+
+.careers-container p {
+  font-size: 16px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---------- PROFESSIONAL INTERNSHIP SECTION ---------- */
+.careers-internship {
+  background: linear-gradient(135deg, #fefefe 0%, #f3f3f3 100%);
+  padding: 50px 20px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.careers-internship h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.careers-internship p {
+  font-size: 16px;
+  color: #0a1f44;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+}
+
+/* Internship Cards Layout */
+.internship-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.internship-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.internship-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+.internship-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #fbbf24;
+}
+
+.internship-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 10px;
+}
+
+.internship-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- CERTIFICATE SECTION ---------- */
+.careers-certificate {
+  background: #f3f3f3;
+  padding: 50px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.careers-certificate h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.careers-certificate p {
+  font-size: 16px;
+  color: #0a1f44;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+}
+
+.certificate-img {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.certificate-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.careers-contact {
+  background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+  padding: 40px 25px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.careers-contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.careers-contact h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 15px;
+}
+
+.careers-contact p {
+  font-size: 16px;
+  color: #0a1f44;
+  margin-bottom: 20px;
+}
+
+.careers-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.careers-contact li {
+  font-size: 16px;
+  color: #0a1f44;
+  margin-bottom: 10px;
+}
+
+.careers-contact a {
+  color: #0a1f44;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.careers-contact a:hover {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .internship-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .certificate-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-internship, 
+  .careers-certificate, 
+  .careers-contact {
+    padding: 40px 15px;
+    margin: 40px auto;
+  }
+  .certificate-img {
+    max-width: 260px;
+  }
+  .careers-container h2 {
+    font-size: 24px;
+  }
+  .careers-container p {
+    font-size: 15px;
+  }
+  /* Internship cards row for mobile */
+  .internship-cards {
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  .internship-card {
+    min-width: 240px;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-img {
+    max-width: 220px;
+  }
+  .careers-container h2 {
+    font-size: 20px;
+  }
+  .careers-container p {
+    font-size: 14px;
+  }
+  .internship-card {
+    min-width: 200px;
+    padding: 20px 15px;
+  }
+}
