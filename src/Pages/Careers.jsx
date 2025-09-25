@@ -34,7 +34,7 @@ const Careers = () => {
           <div className="careers-internship">
             <h3>Internship Opportunities</h3>
             <p>
-              Shalom Builders offers a **3-month Civil Engineering Internship**
+              Shalom Builders offers a 03-month Civil Engineering Internship**
               designed to give students hands-on experience in real construction
               projects. Gain practical knowledge, work with our experts, and
               prepare for a successful career in the construction industry.
