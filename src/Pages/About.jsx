@@ -113,7 +113,7 @@ const About = () => {
           </div>
           <div className="team-right">
             <h2 className="team-name">Micaiah Sharon</h2>
-            <h4 className="team-role">Project Manager</h4>
+            <h4 className="team-role">Project Assistant</h4>
             <p className="team-description">
               Mr. Micaiah plays a key role in supporting the planning,
               coordination, and execution of projects. By assisting in data
