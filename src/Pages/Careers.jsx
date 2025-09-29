@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Careers.css"; // custom CSS only for Careers page
-import certificateImg from "/img/Certificate.jpg"; // example certificate image
+import "../Css/Careers.css"; 
+import certificateImg from "/img/Certificate.jpg"; 
 import { Link } from "react-router-dom";
 
 const Careers = () => {
@@ -19,7 +19,7 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Careers Body */}
+      {/* Careers Body */}  
       <section className="careers-body">
         <div className="careers-container">
           <h2>Join Our Team</h2>
