@@ -159,7 +159,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="footer-bottom">
-        <p>© {year} All Rights Reserved | Shalom Builders</p>
+        <p>© {year} All Rights Reserved | Muthu Nambi Dev</p>
 
         {/* note: type="button" prevents accidental form-submits if inside a form */}
         <button

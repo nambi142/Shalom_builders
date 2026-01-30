@@ -1,5 +1,5 @@
 // src/Pages/Contact.jsx
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiPhone, FiMail, FiMapPin, FiClock } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
@@ -10,16 +10,24 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
+ 
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => setMessage(""), 5000); 
+      return () => clearTimeout(timer);
+    }
+  }, [message]);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", 
-        "YOUR_TEMPLATE_ID", 
+        "service_kab7kgp", // Service ID
+        "template_cbl7xub", // Template ID
         form.current,
-        "YOUR_PUBLIC_KEY" 
+        "Gb8mUmlWFlBcxZX4d" // Public Key
       )
       .then(
         () => {
@@ -28,7 +36,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
-          console.error("FAILED...", error.text);
+          console.error("FAILED...", error); // log full error
           setMessage("❌ Failed to send message. Please try again.");
           setLoading(false);
         }
@@ -113,15 +121,15 @@ const Contact = () => {
             {/* Left - Form */}
             <form ref={form} onSubmit={sendEmail} className="contact-form">
               <div className="form-row">
-                <input 
-                  type="text" 
-                  name="user_name" 
-                  placeholder="Your Name" 
-                  required 
+                <input
+                  type="text"
+                  name="name" 
+                  placeholder="Your Name"
+                  required
                 />
                 <input
                   type="email"
-                  name="user_email"
+                  name="email" 
                   placeholder="Email Address"
                   required
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -131,26 +139,28 @@ const Contact = () => {
               <div className="form-row">
                 <input
                   type="tel"
-                  name="user_phone"
+                  name="phone" 
                   placeholder="Phone Number"
                   required
                   pattern="[0-9]{10}"
                   title="Enter a valid 10-digit phone number"
                   maxLength="10"
-                  onInput={(e) => (e.target.value = e.target.value.replace(/[^0-9]/g, ""))}
+                  onInput={(e) =>
+                    (e.target.value = e.target.value.replace(/[^0-9]/g, ""))
+                  }
                 />
-                <input 
-                  type="text" 
-                  name="subject" 
-                  placeholder="Subject" 
-                  required 
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
                 />
               </div>
               <div className="form-row full">
-                <textarea 
-                  name="message" 
-                  placeholder="Message" 
-                  rows="5" 
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
                   required
                 ></textarea>
               </div>
@@ -162,9 +172,9 @@ const Contact = () => {
 
             {/* Right - Image */}
             <div className="contact-image">
-              <img 
-                src="/img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg" 
-                alt="Contact Illustration" 
+              <img
+                src="/img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg"
+                alt="Contact Illustration"
               />
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Careers.css"; // custom CSS only for Careers page
-import certificateImg from "/img/Certificate.jpg"; // example certificate image
+import "../Css/Careers.css"; 
+import certificateImg from "/img/Certificate.jpg"; 
 import { Link } from "react-router-dom";
 
 const Careers = () => {
@@ -19,7 +19,7 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Careers Body */}
+      {/* Careers Body */}  
       <section className="careers-body">
         <div className="careers-container">
           <h2>Join Our Team</h2>
@@ -34,7 +34,7 @@ const Careers = () => {
           <div className="careers-internship">
             <h3>Internship Opportunities</h3>
             <p>
-              Shalom Builders offers a **3-month Civil Engineering Internship**
+              Shalom Builders offers a 03-month Civil Engineering Internship**
               designed to give students hands-on experience in real construction
               projects. Gain practical knowledge, work with our experts, and
               prepare for a successful career in the construction industry.
