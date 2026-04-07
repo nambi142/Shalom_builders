@@ -46,15 +46,14 @@ const Header = () => {
           {/* Left Side - keep desktop content exactly as before */}
           <div className="header-left">
             <span className="header-item">
-              <FaMapMarkerAlt className="icon" /> Pallivasal complex, 1
-              upstairs, Water Tank Rd, Palayamkottai, Tirunelveli, Tamil Nadu
-              627011
+              <FaMapMarkerAlt className="icon" /> 9, Nachinikinyar Street
+              Kokkirakulam, Palayamkottai, Tirunelveli, Tamilnadu - 627009.
             </span>
             <span className="pipe">|</span>
             <span>
-              <a href="tel:9442152333" className="header-item">
+              <a href="tel:8190859587" className="header-item">
                 {" "}
-                <FaPhoneAlt className="icon" /> Ph-9442152333
+                <FaPhoneAlt className="icon" /> Ph-8190859587
               </a>
             </span>
             <span className="pipe">|</span>
@@ -67,7 +66,7 @@ const Header = () => {
           <div className="header-right">
             <span className="follow-text">Follow us:</span>
             <a
-              href="https://www.facebook.com/people/Shalom-Builders/61562863956813/#"
+              href=" https://www.facebook.com/profile.php?id=61576484825469"
               className="social-icon"
               aria-label="facebook"
               target="_blank"
@@ -77,7 +76,7 @@ const Header = () => {
             </a>
             <span className="pipe">|</span>
             <a
-              href="https://www.instagram.com/shalombuilderstvl/"
+              href="https://www.instagram.com/markodraftindia/?hl=en"
               className="social-icon"
               aria-label="instagram"
               target="_blank"
@@ -87,7 +86,7 @@ const Header = () => {
             </a>
             <span className="pipe">|</span>
             <a
-              href="mailto:Shalombuilderstvl@gmail.com"
+              href="mailto: markodraftindia@gmail.com"
               className="social-icon"
               aria-label="email"
             >
@@ -95,7 +94,7 @@ const Header = () => {
             </a>
             <span className="pipe">|</span>
             <a
-              href="https://www.linkedin.com/in/shalom-builders-6a066a355/?originalSubdomain=in"
+              href="https://www.linkedin.com/company/markodraft-builders-constructions/"
               className="social-icon"
               aria-label="linkedin"
               target="_blank"
@@ -110,12 +109,10 @@ const Header = () => {
         <div className="header-bottom">
           {/* Logo + Company Name */}
           <div className="logo-container">
-            <img src="/img/logo.png_prev_ui.png" alt="Company Logo" />
+            <img src="/img/companylogo.jpeg" alt="Company Logo" />
             <div className="company-text">
-              <h2>SHALOM BUILDERS</h2>
-              <h3>
-                IN GOD WE TRUST 
-              </h3>
+              <h2>Mark-O-Draft</h2>
+              <h3>Builders & Constructions</h3>
             </div>
           </div>
           {/* Nav (desktop horizontal / mobile slide-out) */}

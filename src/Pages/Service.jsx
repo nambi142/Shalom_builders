@@ -53,10 +53,10 @@ const Service = () => {
             <h4 className="services-subtitle">What We Offer</h4>
             <h2 className="services-title">Our Services</h2>
             <p className="services-intro">
-              At Shalom Builders, we provide a wide range of professional
+              At Mark-O-Draft, we provide a wide range of professional
               construction and design solutions. From interior decoration to
               full-scale commercial projects, we ensure quality, trust, and
-              modern designs.
+              modern designs. Premium home construction services starting form 1900 - 3000 per sq.ft. with teak wook finishing, fingerprint sensor doors, fire sppression system, anti-leak and water-absoption-proof walls and American-style modern design-delivering durable, const-effective construction that's truly worth the investment. 1 Lakh worth Home appliances for Fully free
             </p>
           </div>
 

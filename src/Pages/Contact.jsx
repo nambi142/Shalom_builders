@@ -10,10 +10,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
- 
   useEffect(() => {
     if (message) {
-      const timer = setTimeout(() => setMessage(""), 5000); 
+      const timer = setTimeout(() => setMessage(""), 5000);
       return () => clearTimeout(timer);
     }
   }, [message]);
@@ -27,7 +26,7 @@ const Contact = () => {
         "service_kab7kgp", // Service ID
         "template_cbl7xub", // Template ID
         form.current,
-        "Gb8mUmlWFlBcxZX4d" // Public Key
+        "Gb8mUmlWFlBcxZX4d", // Public Key
       )
       .then(
         () => {
@@ -39,7 +38,7 @@ const Contact = () => {
           console.error("FAILED...", error); // log full error
           setMessage("❌ Failed to send message. Please try again.");
           setLoading(false);
-        }
+        },
       );
   };
 
@@ -72,10 +71,7 @@ const Contact = () => {
               </div>
               <h3>Phone Number</h3>
               <p>
-                <a href="tel:9442152333">+91 94421 52333</a>
-              </p>
-              <p>
-                <a href="tel:+917449152333">+91 74491 52333</a>
+                <a href="tel:8190859587">+91 81908 59587</a>
               </p>
             </div>
 
@@ -86,9 +82,7 @@ const Contact = () => {
               </div>
               <h3>Contact Email</h3>
               <p>
-                <a href="mailto:Shalombuilderstvl@gmail.com">
-                  Shalombuilderstvl@gmail.com
-                </a>
+                <a href="mailto:markodraftindia@gmail.com">markodraftindia@gmail.com</a>
               </p>
             </div>
 
@@ -99,9 +93,8 @@ const Contact = () => {
               </div>
               <h3>Our Location</h3>
               <p>
-                Pallivasal complex, 1 Upstairs, <br />
-                Water Tank Rd, Palayamkottai, <br />
-                Tirunelveli, Tamil Nadu 627011
+                9, Nachinikinyar Street Kokkirakulam, Palaymkottai, Tirunelveli,
+                Tamilnadu - 627009
               </p>
             </div>
 
@@ -123,13 +116,13 @@ const Contact = () => {
               <div className="form-row">
                 <input
                   type="text"
-                  name="name" 
+                  name="name"
                   placeholder="Your Name"
                   required
                 />
                 <input
                   type="email"
-                  name="email" 
+                  name="email"
                   placeholder="Email Address"
                   required
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -139,7 +132,7 @@ const Contact = () => {
               <div className="form-row">
                 <input
                   type="tel"
-                  name="phone" 
+                  name="phone"
                   placeholder="Phone Number"
                   required
                   pattern="[0-9]{10}"
@@ -173,7 +166,7 @@ const Contact = () => {
             {/* Right - Image */}
             <div className="contact-image">
               <img
-                src="/img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg"
+                src="/img/brand.jpeg"
                 alt="Contact Illustration"
               />
             </div>

@@ -1,0 +1,253 @@
+/* ===========================
+   NotFound.css — 404 Page
+   Construction Company Theme
+   =========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap");
+
+/* ---------- Root / Wrapper ---------- */
+.nf-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Barlow", sans-serif;
+}
+
+/* ---------- Construction Tape Stripes ---------- */
+.nf-tape {
+  position: absolute;
+  left: -5%;
+  width: 110%;
+  height: 54px;
+  background: repeating-linear-gradient(
+    -55deg,
+    #F5A623 0px,
+    #F5A623 30px,
+    #1a1a1a 30px,
+    #1a1a1a 60px
+  );
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.nf-tape--top {
+  top: 0;
+  animation: slideTape 6s linear infinite;
+}
+
+.nf-tape--bottom {
+  bottom: 0;
+  animation: slideTape 6s linear infinite reverse;
+}
+
+@keyframes slideTape {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(60px); }
+}
+
+/* ---------- Main Content ---------- */
+.nf-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 32px;
+  max-width: 580px;
+}
+
+/* ---------- Hard Hat Icon ---------- */
+.nf-icon {
+  margin: 0 auto 24px;
+  width: 90px;
+  animation: bounce 2.4s ease-in-out infinite;
+}
+
+.nf-icon svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 6px 18px rgba(245, 166, 35, 0.45));
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+/* ---------- 404 Digits ---------- */
+.nf-code {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(100px, 18vw, 160px);
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nf-zero {
+  color: #F5A623;
+  display: inline-block;
+  animation: spinZero 6s ease-in-out infinite;
+}
+
+@keyframes spinZero {
+  0%, 90%, 100% { transform: rotate(0deg); }
+  45%            { transform: rotate(360deg); }
+}
+
+/* ---------- Headings & Text ---------- */
+.nf-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(22px, 5vw, 36px);
+  letter-spacing: 6px;
+  color: #F5A623;
+  margin: 10px 0 16px;
+}
+
+.nf-sub {
+  font-size: 15px;
+  color: #aaaaaa;
+  line-height: 1.7;
+  margin: 0 auto 24px;
+  max-width: 400px;
+}
+
+/* ---------- Divider ---------- */
+.nf-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+  color: #F5A623;
+  font-size: 18px;
+}
+
+.nf-divider span:first-child,
+.nf-divider span:last-child {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F5A623 60%, transparent);
+  max-width: 160px;
+}
+
+/* ---------- Redirect Counter ---------- */
+.nf-redirect {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+.nf-redirect strong {
+  color: #F5A623;
+  font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.nf-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nf-btn {
+  padding: 12px 32px;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nf-btn--primary {
+  background: #F5A623;
+  color: #1a1a1a;
+}
+
+.nf-btn--primary:hover {
+  background: #e8941a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.35);
+}
+
+.nf-btn--outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid #444;
+}
+
+.nf-btn--outline:hover {
+  border-color: #F5A623;
+  color: #F5A623;
+  transform: translateY(-2px);
+}
+
+/* ---------- Decorative Crane ---------- */
+.nf-crane {
+  position: absolute;
+  top: 54px;
+  right: 40px;
+  width: 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nf-crane__mast {
+  width: 8px;
+  height: 140px;
+  background: #333;
+  margin-left: auto;
+  border-radius: 2px;
+}
+
+.nf-crane__jib {
+  width: 80px;
+  height: 8px;
+  background: #444;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nf-crane__cable {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  width: 2px;
+  height: 70px;
+  background: #666;
+  animation: swingCable 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.nf-crane__hook {
+  position: absolute;
+  top: 74px;
+  right: -4px;
+  font-size: 18px;
+  animation: swingCable 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes swingCable {
+  0%, 100% { transform: rotate(-6deg); }
+  50%       { transform: rotate(6deg); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .nf-crane { display: none; }
+  .nf-actions { flex-direction: column; align-items: center; }
+  .nf-btn { width: 100%; max-width: 280px; }
+}

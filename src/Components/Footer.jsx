@@ -25,7 +25,7 @@ const Footer = () => {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     items.forEach((item) => observer.observe(item));
@@ -57,32 +57,32 @@ const Footer = () => {
         {/* About */}
         <div className="footer-about footer-animate">
           <div className="footer-logo">
-            <img src="/img/logo.png.png" alt="Shalom Builders Logo" />
-            <h2>SHALOM BUILDERS</h2>
+            <img src="\img\companylogo.jpeg" alt="Mark-O-Draft Logo" />
+            <h2>Mark-O-Draft</h2>
           </div>
           <p>
-            Welcome to Shalom Builders – Trusted Construction & Interior
-            Solutions At Tirunelveli and Tamilnadu, we specialize in delivering
+            Welcome to Mark-O-Draft – Trusted Construction & Interior Solutions
+            At Tirunelveli and Tamilnadu, we specialize in delivering
             high-quality construction services, residential projects, commercial
             buildings, and modern interior design solutions.
           </p>
           <div className="footer-social">
             <a
-              href="https://www.facebook.com/people/Shalom-Builders/61562863956813/"
+              href="https://www.facebook.com/profile.php?id=61576484825469"
               target="_blank"
               rel="noreferrer"
             >
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/shalombuilderstvl/"
+              href="https://www.instagram.com/markodraftindia/?hl=en"
               target="_blank"
               rel="noreferrer"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://www.linkedin.com/in/shalom-builders-6a066a355/?originalSubdomain=in"
+              href="https://www.linkedin.com/company/markodraft-builders-constructions/"
               target="_blank"
               rel="noreferrer"
             >
@@ -94,26 +94,25 @@ const Footer = () => {
         {/* Contact */}
         <div className="footer-contact footer-animate">
           <h3>CONTACT US</h3>
-          <ul className="contact-info">
+          <ul className="contact-info">  
             <li>
               <a
                 href="https://www.google.com/maps/search/shalom+builders+tirunelveli/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <MdLocationOn className="icon" /> Pallivasal complex, 1
-                upstairs, Water Tank Rd, Palayamkottai, Tirunelveli, Tamil Nadu
-                627011
+                <MdLocationOn className="icon" /> 9, Nachinikinyar Street
+                Kokkirakulam Palayamkottai, Tirunelveli, TamilNadu - 627009
               </a>
             </li>
             <li>
               <a href="tel:9442152333">
-                <MdPhone className="icon" /> +91 9442152333
+                <MdPhone className="icon" /> +91 8190859587
               </a>
             </li>
             <li>
-              <a href="mailto:Shalombuilderstvl@gmail.com">
-                <MdEmail className="icon" /> Shalombuilderstvl@gmail.com
+              <a href="mailto: markodraftindia@gmail.com">
+                <MdEmail className="icon" /> markodraftindia@gmail.com
               </a>
             </li>
           </ul>

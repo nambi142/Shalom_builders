@@ -12,6 +12,7 @@ import Careers from "./Pages/Careers";
 import Gallery from "./Pages/Gallery";
 import UploadProjects from "./Pages/upload";
 import ScrollToTop from "./Components/ScrollToTop"; 
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <UploadProjects />

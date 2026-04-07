@@ -24,7 +24,7 @@ const Careers = () => {
         <div className="careers-container">
           <h2>Join Our Team</h2>
           <p>
-            At Shalom Builders, we value talent, innovation, and dedication. We
+            At Mark-O-Draft, we value talent, innovation, and dedication. We
             provide opportunities to work on diverse projects in construction
             and real estate while growing in a collaborative and professional
             environment.
@@ -34,7 +34,7 @@ const Careers = () => {
           <div className="careers-internship">
             <h3>Internship Opportunities</h3>
             <p>
-              Shalom Builders offers a 03-month Civil Engineering Internship**
+              Mark-O-Draft offers a 03-month Civil Engineering Internship**
               designed to give students hands-on experience in real construction
               projects. Gain practical knowledge, work with our experts, and
               prepare for a successful career in the construction industry.
@@ -61,7 +61,7 @@ const Careers = () => {
                 <div className="internship-icon">📜</div>
                 <h4>Professional Certification</h4>
                 <p>
-                  Receive a Shalom Builders certificate upon completion to boost
+                  Receive a Mark-O-Draft certificate upon completion to boost
                   your career prospects.
                 </p>
               </div>
@@ -73,7 +73,7 @@ const Careers = () => {
             <h3>Professional Certification</h3>
             <p>
               After successfully completing the 3-month internship, interns will
-              receive a professional certificate from Shalom Builders
+              receive a professional certificate from Mark-O-Draft
               recognizing their skills and contribution. This certificate
               enhances your career prospects in the construction and engineering
               industry.
@@ -95,12 +95,12 @@ const Careers = () => {
             </p>
             <ul>
               <li>
-                Phone: <a href="tel:9442152333">+91 9442152333</a>
+                Phone: <a href="tel:8190859587">+91 81908 59587</a>
               </li>
               <li>
                 Email:{" "}
                 <a href="mailto:Shalombuilderstvl@gmail.com">
-                  Shalombuilderstvl@gmail.com
+                  markodraftindia@gmail.com
                 </a>
               </li>
             </ul>

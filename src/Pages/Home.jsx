@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "../Css/Home.css";
 import { FaTools, FaClock, FaUsers, FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -12,27 +13,72 @@ const Home = () => {
     },
     {
       img: "/project-img/IMG20240729131020.jpg",
-      title: "Modern Farmhouse",
+      title: "Eenovation & Remodelling",
       category: "Interior | Design",
     },
     {
       img: "/project-img/shed-works-ground.jpg",
-      title: "Shed Roof",
+      title: "Roofing Shed Fabrication Work (ALT)Shed Work",
       category: "Architecture | Landscape",
     },
     {
       img: "/project-img/terres-roofing.jpg",
-      title: "Rooftop Terrace",
+      title: "House Shed Work",
       category: "Luxury | Outdoor",
     },
   ];
 
   return (
     <div>
+
+      {/* SEO Optimization */}
+      <Helmet>
+        <title>
+          Mark-O-Draft | Construction & Realestate 
+        </title>
+
+        <meta
+          name="description"
+          content="We are Quality based Service Provider | Best Building construction | Electrical & Plumbing Maintenance | Remodel & Masonry repair. Affordable house construction company in Tirunelveli providing interior, exterior, elevation, painting, plastering, carpentry and complete construction services across Tamil Nadu."
+        />
+
+        <meta
+          name="keywords"
+          content="construction builders Tirunelveli, house building Tirunelveli, home construction Tamilnadu, building construction contractor, construction company Tirunelveli, construction cost per sq ft, low cost house construction, low budget house construction, house construction cost Tamilnadu, carpentry services, affordable construction services, interior construction, exterior construction, elevation design, painting services, plastering work, curing construction work, column and footing construction"
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://markodraft.com/home/building-contractor"
+        />
+
+        {/* Open Graph SEO */}
+        <meta
+          property="og:title"
+          content="Budget Friendly House Construction in Tirunelveli | Expert Builders"
+        />
+
+        <meta
+          property="og:description"
+          content="Best building construction company in Tirunelveli providing affordable house construction, electrical and plumbing maintenance, remodeling and masonry repair."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://markodraft.com/home/building-contractor"
+        />
+
+        <meta property="og:image" content="/project-img/jam-nagar.jpg" />
+      </Helmet>
+
       {/* ---------- HERO VIDEO ---------- */}
       <div className="home-hero">
         <video className="bg-video" autoPlay loop muted playsInline>
-          <source src="/video/ADVIDEO-Copy.mp4" type="video/mp4" />
+          <source src="\video\MarkODraftBgVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -40,7 +86,7 @@ const Home = () => {
       {/* ---------- FEATURES SECTION ---------- */}
       <section className="features-section">
         <div className="features-inner">
-          <h2 className="features-title">Your Best Choose</h2>
+          <h2 className="features-title">Mark-O-Draft - TOP BUILDING CONTRACTOR</h2>
 
           {/* Decorative line + House icon */}
           <div className="title-deco">
@@ -52,15 +98,11 @@ const Home = () => {
           </div>
 
           <p className="features-subtitle">
-            At <strong>Shalom Builders</strong>, we specialize in delivering
-            high-quality, on-time, and trusted construction services. Our team
-            of experienced professionals ensures every project meets excellence
-            with precision and care.
+            At Mark-O-Draft, we specialize in delivering high Premium-quality, on-time, and trusted construction services That start from Rs.1900 to 3000 with Free Home Appliances, Solar and other advanced Technologies throuhout Tamilnadu. (Home, Warehouse, Commercial Shops and Cold storage) 
           </p>
 
           {/* Services row */}
           <div className="services-row">
-            {/* Card 1 */}
             <div className="feature-card">
               <div className="feature-icon-wrap">
                 <FaTools className="feature-icon" />
@@ -72,7 +114,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Card 2 */}
             <div className="feature-card">
               <div className="feature-icon-wrap">
                 <FaClock className="feature-icon" />
@@ -84,7 +125,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Card 3 */}
             <div className="feature-card">
               <div className="feature-icon-wrap">
                 <FaUsers className="feature-icon" />
@@ -106,7 +146,6 @@ const Home = () => {
 
           <div className="featured-slider">
             <div className="featured-track">
-              {/* Render projects twice for infinite loop */}
               {[...Array(2)].map((_, idx) =>
                 projects.map((project, i) => (
                   <div className="project-card" key={`${idx}-${i}`}>
@@ -125,7 +164,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Button */}
           <div className="featured-btn-wrap">
             <Link to="/Projects">
               <button className="featured-btn">ALL PROJECTS</button>

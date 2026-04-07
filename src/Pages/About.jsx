@@ -1,5 +1,6 @@
 import React from "react";
-import "../Css/About.css"; 
+import { Helmet } from "react-helmet-async";
+import "../Css/About.css";
 import {
   FaBuilding,
   FaUsers,
@@ -13,6 +14,41 @@ import {
 const About = () => {
   return (
     <div className="about-wrapper">
+      {/* SEO Optimization */}
+      <Helmet>
+        <title>
+          Discover our Journey as a Reliable Construction Company | Mark-O-Draft
+        </title>
+
+        <meta
+          name="description"
+          content="The team behind quality construction and interior projects at Mark-O-Draft. We provide affordable building solutions with expert guidance and free consultation in Tirunelveli and across Tamil Nadu."
+        />
+
+        <meta
+          name="keywords"
+          content="construction builders Tirunelveli, house building Tirunelveli, home construction Tamilnadu, home contractors Tirunelveli, building construction contractor, building construction company, construction cost per sq ft, low cost house construction, low budget house construction, house construction cost Tamilnadu, carpentry services, construction company Tirunelveli, affordable construction services, interior construction, exterior construction, elevation design, painting services, plastering work, curing construction work, column and footing construction"
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://shalombuilders.com/about" />
+
+        <meta
+          property="og:title"
+          content="Discover our Journey as a Reliable Construction Company | Mark-O-Draft"
+        />
+
+        <meta
+          property="og:description"
+          content="Affordable building solutions with expert guidance and free consultation. Trusted construction company in Tirunelveli."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://shalombuilders.com/about" />
+        <meta property="og:image" content="/img/about-us.jpg" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="about-hero-section">
         <div className="about-overlay">
@@ -29,31 +65,28 @@ const About = () => {
           <div className="company-left">
             <h2>About</h2>
             <p>
-              At <strong>Shalom Builders</strong>, we are passionate about
-              building more than just structures – we build trust, value, and
-              long-term relationships. As a top-rated construction company in
-              Tirunelveli, we specialize in
-              <strong> residential, commercial, and government projects</strong>,
-              offering complete end-to-end solutions from design to handover.
-              With a team of experienced civil engineers, architects, and
-              skilled workers, we combine <strong>modern technology</strong>,
-              quality materials, and innovative design to deliver projects that
-              are durable, cost-effective, and aesthetically appealing.
+              At <strong>Mark-O-Draft</strong>, we are a trusted{" "}
+              <strong>construction company in Tirunelveli</strong>, Tamil Nadu,
+              delivering high-qulity residential, commercial, govenment,
+              industrial, warehouse, and cold storage construction service
+              across Tamil Nadu. With 40+ satisfied coustomers, we provide
+              complete end-toend construction solution from planning and
+              architectural design to execution and final handover. In addtion
+              to new construction, we offer electrical and plumbing woks,
+              buiding renovation, remodeling, painting services granite and
+              tiles installtion, flooring solutions, and coplete civil
+              contraction services. Our experienced civill engineers,
+              architects, solutions, and complete civil contracting services.
+              Our experienced civil engineers, architects, and skilled
+              professionals use modern construction technology and premium
+              materials to build durable, cost-effective, and aesthetically
+              appealing structures tailroed to every project.
             </p>
-
-            <h3>Why Clients Choose Us</h3>
-            <ul>
-              <li>Expertise in residential & commercial building projects</li>
-              <li>Turnkey construction solutions – from planning to interiors</li>
-              <li>Use of standard materials & modern techniques</li>
-              <li>Transparent pricing & on-time completion</li>
-              <li>Personalized designs to suit every client’s needs</li>
-            </ul>
           </div>
           <div className="company-right">
             <img
               src="/img/about-us.jpg"
-              alt="Shalom Builders"
+              alt="Mark-O-Draft"
               className="company-img"
             />
           </div>
@@ -66,69 +99,70 @@ const About = () => {
           <h3 className="team-subtitle">Our Team</h3>
           <h2 className="team-title">Meet Our Professional Experts</h2>
           <p className="team-intro">
-            Our dedicated professionals are the backbone of Shalom Builders.
-            With years of experience and a commitment to excellence, our team
-            ensures that every project is completed with precision,
-            innovation, and trust. Together, we bring your vision to life.
+            Our dedicated professionals are the backbone of Mark-O-Draft. With
+            years of experience and a commitment to excellence, our team ensures
+            that every project is completed with precision, innovation, and
+            trust. Together, we bring your vision to life.
           </p>
         </div>
 
-        {/* Team Member 1 */}
         <div className="team-profile">
           <div className="team-left">
-            <img src="/img/profile1.jpg" alt="Pushparaj Jaison" />
+            <img src="/img/jesuschrist.png" alt="Lord Jesus Christ" />
           </div>
           <div className="team-right">
-            <h2 className="team-name">Pushparaj Jaison</h2>
-            <h4 className="team-role">Proprietor</h4>
+            <h2 className="team-name">Lord Jesus Christ</h2>
+            <h4 className="team-role">Our Cornerstone</h4>
             <p className="team-description">
-              With a vision to deliver quality-driven construction and interior solutions, <strong>Mr. Jaison</strong>  leads shalom builders with dedication, integrity, and a client-first approach. He ensures every project is completed with excellence, transparency, and timely execution. He Brings strong expertise in construction management, business development, and client relations. With a commitment to quality, innovation, and transparency, he ensures every project is delivered on time with the highest standards
+              We dedicate all our work to Lord Jesus Christ, our cornerstone and
+              eternal guiding light. Every brick we lay, every structure we
+              build, and every promise we make to our clients is rooted in His
+              teachings of love, integrity, and grace. His wisdom guides our
+              decisions, His strength sustains our team, and His blessings
+              overflow in every project we deliver.
             </p>
-
-            <ul className="team-info">
-              <li>
-                <strong>Mobile:</strong>{" "}
-                <a href="tel:+917449152333">+91 74491 52333</a>
-              </li>
-              <li>
-                <strong>Email:</strong>{" "}
-                <a href="mailto:Shalombuilderstvl@gmail.com">
-                  Shalombuilderstvl@gmail.com
-                </a>
-              </li>
-              <li>
-                <strong>Experience:</strong> 15 Years
-              </li>
-              <li>
-                <strong>Availability:</strong> Full Time
-              </li>
-            </ul>
+            <p className="team-description">
+              At Mark-O-Draft, we believe that true excellence is not just built
+              with cement and steel — it is built with faith, honesty, and
+              purpose. Lord Jesus inspires us to serve every client as we would
+              serve Him — with humility, dedication, and a heart full of
+              gratitude.
+            </p>
+            <blockquote className="team-verse">
+              "Unless the Lord builds the house, the builders labor in vain."
+              <span> — Psalm 127:1</span>
+            </blockquote>
           </div>
         </div>
 
-        {/* Team Member 2 */}
         <div className="team-profile">
           <div className="team-left">
-            <img src="/img/profile2.jpg" alt="Micaiah Sharon" />
+            <img src="/img/MicaiahSharon.jpeg" alt="Micaiah Sharon" />
           </div>
           <div className="team-right">
             <h2 className="team-name">Micaiah Sharon</h2>
-            <h4 className="team-role">Project Assistant</h4>
+            <h4 className="team-role">Proprietor</h4>
             <p className="team-description">
-              Mr. Micaiah plays a key role in supporting the planning,
-              coordination, and execution of projects. By assisting in data
-              management, reporting, and resource allocation, he ensures
-              smooth day-to-day operations at site.
+              Mr. Micaiah Sharon is the Proprietor of the organization, bringing
+              visionary leadership and entrepreneurial drive to every project.
+              He oversees the overall business operations, client relationships,
+              and strategic growth, ensuring that the company delivers
+              excellence in every endeavor.
             </p>
 
             <h4 className="team-role-sub">Key Skills & Qualities:</h4>
             <ul className="team-skills">
-              <li>Assists in project scheduling and documentation</li>
-              <li>Supports data entry, analysis, and progress tracking</li>
-              <li>Coordinates between teams, vendors, and clients</li>
-              <li>Ensures quality checks and compliance with standards</li>
-              <li>Skilled in time management and on-site coordination</li>
-              <li>Contributes to a collaborative and efficient work environment</li>
+              <li>Leads business strategy, growth, and overall operations</li>
+              <li>Manages client relationships and business development</li>
+              <li>
+                Oversees project planning, execution, and quality standards
+              </li>
+              <li>Drives team performance and organizational culture</li>
+              <li>Skilled in decision-making, negotiation, and leadership</li>
+              <li>
+                Committed to delivering value and building long-term
+                partnerships
+              </li>
             </ul>
 
             <ul className="team-info">

@@ -1,12 +1,11 @@
 /* ---------- HERO VIDEO ---------- */
 .home-hero {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 70px); /* subtract header height */
+  margin-top: 5px;            /* push it below the header */
   position: relative;
   overflow: hidden;
-  margin: 0;
   padding: 0;
-  background: #000; /* fallback */
 }
 
 .bg-video {
@@ -15,34 +14,41 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* always cover full screen */
+  object-fit:inherit;
+  object-position: center center;
   z-index: 0;
   margin: 0;
-  padding: 0;
+  padding:2px;
 }
 
-/* ---------- Mobile View Fix for Hero Video ---------- */
+/* ---------- Mobile View ---------- */
 @media (max-width: 768px) {
   .home-hero {
-    width: 100%;
-    height: 50vh; /* Reduced height for mobile */
-    margin: 0;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 0;       /* remove header offset on mobile */
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
-    overflow: hidden;
     position: relative;
-    background: #000; /* fallback */
+    overflow: hidden;
+    background: #000;
+    left: 0;
+    right: 0;
   }
 
   .bg-video {
     position: absolute;
-    top: 50%;      /* center vertically */
-    left: 50%;     /* center horizontally */
-    width: auto;   /* auto width to maintain aspect ratio */
-    height: 100%;  /* take full hero height */
-    transform: translate(-50%, -50%); /* center the video */
-    object-fit: cover; /* ensure it covers horizontally */
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;        /* stretch to fill exact 16:9 box, no black bars */
+    object-position: center;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -50,7 +56,7 @@
 .features-section {
   width: 100%;
   background: #ffffff;
-  padding: 40px 20px 40px;
+  padding: 20px 20px 40px;
   box-sizing: border-box;
   font-family: "Sansation", sans-serif;
   font-weight: 700;
@@ -68,7 +74,7 @@
   font-size: 28px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #222;
+  color: #ab4e23;
   text-transform: uppercase;
   margin: 0;
 }
@@ -79,13 +85,13 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
-  margin: 18px 0 22px;
+  margin: 10px 0 12px;
 }
 
 .deco-line {
   display: inline-block;
   width: 70px;
-  height: 2px;
+  height: 1.5px;
   background: #000000;
   border-radius: 2px;
 }
@@ -103,8 +109,8 @@
 }
 
 .deco-house-icon {
-  font-size: 18px;
-  color: #ffa200;
+  font-size: 20px;
+  color: #ab4e23;
 }
 
 /* Subtitle */
@@ -157,12 +163,12 @@
 
 .feature-icon {
   font-size: 36px;
-  color: #f0b24a;
+  color: #ab4e23;
   transition: color 0.28s ease, transform 0.28s ease;
 }
 
 .feature-card:hover .feature-icon-wrap {
-  background: #fbbf24;
+  background: #ab4e23;
   transform: scale(1.06);
   box-shadow: 0 10px 26px rgba(251,191,36,0.18);
 }
@@ -293,7 +299,7 @@
 }
 
 .featured-btn:hover {
-  background: #222;
+  background: #ab4e23;
   color: #fff;
   transform: scale(1.05);
 }
@@ -353,7 +359,7 @@
 
 /* Tablets (≤992px) */
 @media (max-width: 992px) {
-  .features-section { padding: 60px 18px; }
+  .features-section { padding: 20px 18px; }
   .features-title { font-size: 24px; }
   .deco-line { width: 54px; }
   .deco-icon { width: 30px; height: 30px; }
@@ -408,7 +414,7 @@
 
   /* Featured Project Section Height Fix */
   .featured-overlay {
-    padding: 30px 16px;
+    padding: 10px 16px;
     height: auto;
     max-height: 80vh;
     display: flex;

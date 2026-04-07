@@ -1,28 +1,28 @@
-/* ---------- PAGE HERO (MATCH ABOUT US HEADING) ---------- */
+/* ---------- PAGE HERO ---------- */
 .page-hero {
   position: relative;
   width: 100%;
   height: 320px;
-  background: url("/img/ourservice.jpg") center/cover no-repeat; /* Replace with your service bg */
+  background: url("/img/ourservice.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Sansation", sans-serif; /* added font family */
+  font-family: "Sansation", sans-serif;
 }
 
 .page-hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   color: #fff;
-  font-family: "Sansation", sans-serif; /* consistent font */
+  font-family: "Sansation", sans-serif;
 }
 
 .page-title {
@@ -32,17 +32,25 @@
   margin-bottom: 12px;
   letter-spacing: 1.5px;
   font-family: "Sansation", sans-serif;
-  color: #fff; /* keep white for hero */
+  color: #fff;
 }
 
-.breadcrumb a{
+.breadcrumb a {
   font-size: 16px;
   font-family: "Sansation", sans-serif;
-  color: #fbbf24; /* yellow accent */
+  color: #fbbf24;
   text-decoration: none;
 }
 
 /* ---------- OUR SERVICES ---------- */
+.our-services {
+  padding: 80px 50px;
+  background: #fff;
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .services-heading {
   text-align: center;
   margin-bottom: 50px;
@@ -54,71 +62,16 @@
 .services-subtitle {
   font-size: 18px;
   font-weight: 700;
-  color: #fbbf24; /* yellow accent */
+  color: #fbbf24;
   text-transform: uppercase;
-  margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
 .services-title {
   font-size: 34px;
   font-weight: 800;
-  color: #0a1f44; /* navy blue */
+  color: #0a1f44;
   margin-bottom: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.services-intro {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.7;
-}
-
-.services-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.services-header .subtitle {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #f5c518;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.services-header .services-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 15px;
-}
-
-.services-header .services-desc {
-  font-size: 16px;
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.our-services {
-  padding: 80px 50px;
-  background: #fff;
-  font-family: "Sansation", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.services-title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 800;
-  margin-bottom: 60px;
-  color: #0a1f44; /* navy blue */
   text-transform: uppercase;
   letter-spacing: 1.5px;
   position: relative;
@@ -129,18 +82,27 @@
   display: block;
   width: 80px;
   height: 3px;
-  background: #fbbf24; /* yellow accent */
+  background: #fbbf24;
   margin: 12px auto 0;
   border-radius: 2px;
 }
 
+.services-intro {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  text-align: start;
+  margin-bottom: 100px ;
+}
+
+/* ---------- SERVICE GRID ---------- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 35px;
 }
 
-/* ---------- Service Card ---------- */
+/* ---------- SERVICE CARD ---------- */
 .service-card {
   background: #fff;
   border-radius: 10px;
@@ -148,7 +110,10 @@
   padding: 30px 22px 35px;
   text-align: left;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+  transition-delay: var(--delay, 0s);
 }
 
 .service-card:hover {
@@ -156,14 +121,23 @@
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------- Icon Box ---------- */
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.service-card.visible:hover {
+  transform: translateY(-10px);
+}
+
+/* ---------- ICON BOX ---------- */
 .service-icon-box {
   position: absolute;
   top: -28px;
   left: 28px;
   width: 65px;
   height: 65px;
-  background: #0a1f44; /* navy blue */
+  background: #0a1f44;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,11 +151,11 @@
 }
 
 .service-card:hover .service-icon-box {
-  background: #fbbf24; /* yellow hover */
+  background: #fbbf24;
   transform: rotate(-5deg) scale(1.05);
 }
 
-/* ---------- Title + Description ---------- */
+/* ---------- CARD CONTENT ---------- */
 .service-name {
   font-size: 20px;
   font-weight: 800;
@@ -191,7 +165,7 @@
 }
 
 .service-card:hover .service-name {
-  color: #fbbf24; /* highlight on hover */
+  color: #fbbf24;
 }
 
 .service-desc {
@@ -201,7 +175,7 @@
   margin-bottom: 18px;
 }
 
-/* ---------- Image Box ---------- */
+/* ---------- IMAGE BOX ---------- */
 .service-img-box {
   margin-top: 18px;
   overflow: hidden;
@@ -210,8 +184,8 @@
 
 .service-img-box img {
   width: 100%;
-  height: 220px;        /* ✅ Fixed uniform height */
-  object-fit: cover;    /* ✅ Crops to fit while keeping ratio */
+  height: 220px;
+  object-fit: cover;
   display: block;
   border-radius: 6px;
   transition: transform 0.45s ease;
@@ -221,41 +195,7 @@
   transform: scale(1.08);
 }
 
-/* ---------- SCROLL ANIMATION ---------- */
-.service-card {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.service-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Slight delay for staggered effect */
-.service-card:nth-child(1).visible { transition-delay: 0.1s; }
-.service-card:nth-child(2).visible { transition-delay: 0.2s; }
-.service-card:nth-child(3).visible { transition-delay: 0.3s; }
-.service-card:nth-child(4).visible { transition-delay: 0.4s; }
-.service-card:nth-child(5).visible { transition-delay: 0.5s; }
-.service-card:nth-child(6).visible { transition-delay: 0.6s; }
-
-.service-card {
-  opacity: 0;
-  transform: translateY(40px) scale(0.95);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  transition-delay: var(--delay, 0s); /* default 0s */
-}
-
-.service-card.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* ---------- RESPONSIVE STYLES ---------- */
-
-/* Tablets (max-width: 992px) */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
   .our-services {
     padding: 60px 30px;
@@ -283,11 +223,10 @@
   }
 
   .service-img-box img {
-    height: 200px; /* smaller height for tablets */
+    height: 200px;
   }
 }
 
-/* Mobile (max-width: 600px) */
 @media (max-width: 600px) {
   .our-services {
     padding: 50px 20px;
@@ -300,7 +239,7 @@
   }
 
   .services-grid {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
     gap: 22px;
   }
 
@@ -331,6 +270,6 @@
   }
 
   .service-img-box img {
-    height: 180px; /* smaller height for mobile */
+    height: 180px;
   }
 }

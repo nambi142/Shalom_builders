@@ -54,7 +54,7 @@ const Projects = () => {
         <div className="projects-container">
           <h2 className="projects-heading">Our Recent Works</h2>
           <p className="projects-intro">
-            At Shalom Builders, we have successfully completed a variety of
+            At Mark-O-Draft, we have successfully completed a variety of
             residential, commercial, and real estate projects. Each project
             reflects our commitment to quality, design, and customer
             satisfaction.
