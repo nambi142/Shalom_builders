@@ -38,13 +38,13 @@
 .breadcrumb a {
   font-size: 16px;
   font-family: "Sansation", sans-serif;
-  color: #fbbf24;
+  color: #fff;
   text-decoration: none;
 }
 
 /* ---------- OUR SERVICES ---------- */
 .our-services {
-  padding: 80px 50px;
+  padding: 30px 50px;
   background: #fff;
   font-family: "Sansation", sans-serif;
   font-weight: 700;
@@ -62,7 +62,7 @@
 .services-subtitle {
   font-size: 18px;
   font-weight: 700;
-  color: #fbbf24;
+  color: #ab4e23;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -70,7 +70,7 @@
 .services-title {
   font-size: 34px;
   font-weight: 800;
-  color: #0a1f44;
+  color: #ab4e23;
   margin-bottom: 18px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -82,8 +82,8 @@
   display: block;
   width: 80px;
   height: 3px;
-  background: #fbbf24;
-  margin: 12px auto 0;
+  background: #ab4e23;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .service-card:hover .service-icon-box {
-  background: #fbbf24;
+  background: #ab4e23;
   transform: rotate(-5deg) scale(1.05);
 }
 
@@ -165,7 +165,7 @@
 }
 
 .service-card:hover .service-name {
-  color: #fbbf24;
+  color: #ab4e23;
 }
 
 .service-desc {
@@ -198,12 +198,12 @@
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
   .our-services {
-    padding: 60px 30px;
+    padding: 20px 30px;
   }
 
   .services-title {
     font-size: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .services-grid {

@@ -287,8 +287,8 @@
 }
 
 .featured-btn {
-  background: #f0b24a;
-  color: #000;
+  background: #e7530e;
+  color: #fff;
   font-size: 15px;
   padding: 12px 32px;
   border: none;
@@ -299,8 +299,8 @@
 }
 
 .featured-btn:hover {
-  background: #ab4e23;
-  color: #fff;
+  background: #f0b24a;
+  color: #000;
   transform: scale(1.05);
 }
 

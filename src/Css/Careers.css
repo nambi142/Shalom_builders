@@ -37,7 +37,7 @@
 .careers-breadcrumb {
   font-size: 16px;
   font-family: "Sansation", sans-serif;
-  color: #fbbf24;
+  color: #fff;
 }
 
 .careers-separator {
@@ -45,15 +45,14 @@
 }
 
 .breadcrumb-link {
-  color: #fbbf24;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .breadcrumb-link:hover {
-  color: #fff;
-  text-decoration: underline;
+  color: #ccc;
 }
 
 .breadcrumb-current {
@@ -63,7 +62,7 @@
 
 /* ---------- CAREERS BODY ---------- */
 .careers-body {
-  padding: 60px 20px;
+  padding: 20px 20px;
   text-align: center;
   background: #fff;
   font-family: "Sansation", sans-serif;
@@ -72,8 +71,8 @@
 .careers-container h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #0a1f44;
-  margin-bottom: 15px;
+  color: #ab4e23;
+  margin-bottom: 10px;
 }
 
 .careers-container p {
@@ -87,10 +86,10 @@
 /* ---------- PROFESSIONAL INTERNSHIP SECTION ---------- */
 .careers-internship {
   background: linear-gradient(135deg, #fefefe 0%, #f3f3f3 100%);
-  padding: 50px 20px;
+  padding: 20px 20px;
   border-radius: 12px;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 10px auto;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
   transition: transform 0.3s ease;
@@ -99,7 +98,7 @@
 .careers-internship h3 {
   font-size: 26px;
   font-weight: 800;
-  color: #fbbf24;
+  color: #ab4e23;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -139,7 +138,7 @@
 .internship-icon {
   font-size: 40px;
   margin-bottom: 15px;
-  color: #fbbf24;
+  color: #ab4e23;
 }
 
 .internship-card h4 {
@@ -170,7 +169,7 @@
 .careers-certificate h3 {
   font-size: 26px;
   font-weight: 800;
-  color: #fbbf24;
+  color: #ab4e23;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -219,7 +218,7 @@
 .careers-contact h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #fbbf24;
+  color: #ab4e23;
   margin-bottom: 15px;
 }
 
@@ -269,8 +268,8 @@
   .careers-internship, 
   .careers-certificate, 
   .careers-contact {
-    padding: 40px 15px;
-    margin: 40px auto;
+    padding: 20px 15px;
+    margin: 10px auto;
   }
   .certificate-img {
     max-width: 260px;

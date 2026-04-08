@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import {
   MdEmail,
-  MdLocationOn,
   MdPhone,
   MdKeyboardArrowUp,
 } from "react-icons/md";
+import { ImOffice } from "react-icons/im";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../Css/Footer.css";
@@ -101,7 +101,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <MdLocationOn className="icon" /> 9, Nachinikinyar Street
+                <ImOffice className="icon" /> 9, Nachinikinyar Street
                 Kokkirakulam Palayamkottai, Tirunelveli, TamilNadu - 627009
               </a>
             </li>

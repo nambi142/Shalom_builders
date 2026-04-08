@@ -99,7 +99,7 @@ const Careers = () => {
               </li>
               <li>
                 Email:{" "}
-                <a href="mailto:Shalombuilderstvl@gmail.com">
+                <a href="mailto: markodraftindia@gmail.com">
                   markodraftindia@gmail.com
                 </a>
               </li>

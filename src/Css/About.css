@@ -23,17 +23,18 @@
 }
 
 .about-hero-section a {
-  color: #fbbf24;
+  color: #fff;
   text-decoration: none;
 }
 
 .about-hero-section a:hover {
+  color: #ccc;
   text-decoration: underline;
 }
 
 /* COMPANY SECTION */
 .company-section {
-  padding: 60px 20px;
+  padding: 20px 20px;
   background: #f9fafb;
 }
 
@@ -55,7 +56,7 @@
   font-size: 32px;
   margin-bottom: 20px;
   color: #0a1f44;
-  border-left: 6px solid #fbbf24;
+  border-left: 6px solid #ab4e23;
   padding-left: 12px;
   font-weight: 700;
 }
@@ -74,7 +75,7 @@
   bottom: -6px;
   width: 50px;
   height: 3px;
-  background: #fbbf24;
+  background: #ab4e23;
   border-radius: 2px;
 }
 
@@ -118,12 +119,15 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media (max-width: 992px) {
   .company-container {
     flex-direction: column;
+  }
+  .company-img{
+    margin-top: 0px;
   }
   .company-left h2 {
     border-left: none;
@@ -274,34 +278,10 @@
   transform: translateY(-3px) scale(1.1);
 }
 
-/* Tablet (max 900px) */
-@media (max-width: 900px) {
-  .team-section {
-    padding: 100px 30px;   /* reduce side padding on tablets */
-  }
-
-  .team-profile {
-    gap: 20px;
-  }
-
-  .team-left img {
-    width: 240px;
-    height: auto;
-  }
-
-  .team-name {
-    font-size: 24px;
-  }
-
-  .team-role {
-    font-size: 14px;
-  }
-}
-
 /* Mobile (max 600px) */
 @media (max-width: 600px) {
   .team-section {
-    padding: 80px 20px;   /* compact padding on mobile */
+    padding: 20px 20px;   /* compact padding on mobile */
   }
 
   .team-profile {
@@ -313,7 +293,7 @@
   .team-left img {
     width: 100%;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 10 auto;
   }
 
   .team-right {
@@ -340,12 +320,11 @@
 }
 
 
-
 /* ACHIEVEMENTS SECTION */
 .achievements-section {
   position: relative;
   background: url("/img/achievements-bg.jpg") no-repeat center/cover;
-  padding: 100px 20px;
+  padding: 20px 20px;
   text-align: center;
   color: #fff;
 }
@@ -357,7 +336,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 31, 68, 0.85);
+  background: rgba(9, 25, 53, 0.85);
   z-index: 0;
 }
 
@@ -369,7 +348,7 @@
 .achievements-subtitle {
   font-size: 16px;
   font-weight: 700;
-  color: #fbbf24;
+  color: #fff;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -403,7 +382,7 @@
 
 .achievement-icon {
   font-size: 42px;
-  color: #fbbf24;
+  color: #fff;
   margin-bottom: 15px;
 }
 
