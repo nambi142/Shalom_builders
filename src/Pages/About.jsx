@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "../Css/About.css";
 import {
@@ -10,6 +10,56 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+
+// Count-up hook — triggers when card scrolls into view
+const useCountUp = (target, duration = 1800) => {
+  const [count, setCount] = useState(0);
+  const started = useRef(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          const startTime = performance.now();
+
+          const tick = (now) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            setCount(Math.floor(eased * target));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+
+          requestAnimationFrame(tick);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return { ref, count };
+};
+
+// Individual animated card
+const AchievementCard = ({ icon, target, suffix, label }) => {
+  const { ref, count } = useCountUp(target);
+  return (
+    <div className="achievement-card" ref={ref}>
+      {icon}
+      <h3>{count}{suffix}</h3>
+      <p>{label}</p>
+    </div>
+  );
+};
 
 const About = () => {
   return (
@@ -219,26 +269,30 @@ const About = () => {
             Building Trust, Delivering Excellence
           </h2>
           <div className="achievements-grid">
-            <div className="achievement-card">
-              <FaBuilding className="achievement-icon" />
-              <h3>500+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div className="achievement-card">
-              <FaUsers className="achievement-icon" />
-              <h3>150+</h3>
-              <p>Team Members</p>
-            </div>
-            <div className="achievement-card">
-              <FaSmile className="achievement-icon" />
-              <h3>1000+</h3>
-              <p>Happy Clients</p>
-            </div>
-            <div className="achievement-card">
-              <FaAward className="achievement-icon" />
-              <h3>25+</h3>
-              <p>Awards Won</p>
-            </div>
+            <AchievementCard
+              icon={<FaBuilding className="achievement-icon" />}
+              target={500}
+              suffix="+"
+              label="Projects Completed"
+            />
+            <AchievementCard
+              icon={<FaUsers className="achievement-icon" />}
+              target={150}
+              suffix="+"
+              label="Team Members"
+            />
+            <AchievementCard
+              icon={<FaSmile className="achievement-icon" />}
+              target={1000}
+              suffix="+"
+              label="Happy Clients"
+            />
+            <AchievementCard
+              icon={<FaAward className="achievement-icon" />}
+              target={25}
+              suffix="+"
+              label="Awards Won"
+            />
           </div>
         </div>
       </section>

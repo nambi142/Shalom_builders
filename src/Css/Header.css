@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #3b3b3b; /* light gray background */
+  background: #3b3b3b;
   color: #fffffe;
   padding: 10px 50px;
   font-size: 12px;
@@ -71,7 +71,6 @@
   padding: 10px 35px;
   height: 70px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  /* make row 2 stick to top on scroll for all screen sizes */
   position: sticky;
   top: 0;
   z-index: 1002;
@@ -84,7 +83,7 @@
 }
 
 .logo-container img {
-  height: 55px; /* refined size */
+  height: 55px;
   width: auto;
 }
 
@@ -117,11 +116,11 @@
 
 .company-text .dove-icon {
   font-size: 10px;
-  color: navy;   /* navy as requested */
-  transform: scaleX(-1); /* mirror horizontally */
+  color: navy;
+  transform: scaleX(-1);
 }
 
-/* Navigation Menu Hover with Yellow Bottom Border */
+/* Navigation Menu */
 .nav-menu {
   display: flex;
   gap: 30px;
@@ -159,7 +158,7 @@
   width: 100%;
 }
 
-/* Hamburger button default: hidden on desktop */
+/* Hamburger — hidden on desktop */
 .hamburger {
   display: none;
   background: transparent;
@@ -168,45 +167,181 @@
   padding: 6px;
   margin-left: 12px;
   color: #111;
+  transition: color 0.2s ease;
+  z-index: 1004;
 }
 
-/* Overlay (when slide menu open on mobile) */
-.menu-overlay {
+.hamburger.is-open {
+  color: #ab4e23;
+}
+
+/* ========================================
+   MOBILE POPUP OVERLAY
+   ======================================== */
+
+.mobile-nav-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1001; /* below header-bottom (1002) and nav-menu (1003) */
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: overlayFadeIn 0.2s ease;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.mobile-nav-popup {
+  background: #fff;
+  border-radius: 16px;
+  width: 88%;
+  max-width: 360px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: popupScale 0.25s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+@keyframes popupScale {
+  from { opacity: 0; transform: scale(0.92) translateY(-10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Popup Header */
+.popup-header {
+  background: #1e1e1e;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup-logo img {
+  height: 36px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.popup-logo span {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ab4e23;
+  letter-spacing: 0.5px;
+}
+
+/* Popup Nav Links */
+.popup-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.popup-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+.popup-link:last-child {
+  border-bottom: none;
+}
+
+.popup-link:hover,
+.popup-link:active {
+  background: #fff5f0;
+  color: #ab4e23;
+  padding-left: 30px;
+}
+
+.popup-link-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ab4e23;
+  opacity: 0.6;
+  min-width: 22px;
+  letter-spacing: 0.5px;
+}
+
+/* Popup Footer */
+.popup-footer {
+  background: #f7f7f7;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+}
+
+.popup-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.popup-contact-item svg {
+  color: #ab4e23;
+  font-size: 13px;
+}
+
+.popup-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.popup-socials a {
+  color: #555;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.popup-socials a:hover {
+  color: #ab4e23;
 }
 
 /* ------------------------ Responsive rules ------------------------ */
 
-/* For tablet and below — we treat <= 992px as "mobile-like" */
 @media (max-width: 992px) {
-  /* Hide address (first span + its pipe) */
   .header-left span:nth-child(1),
   .header-left span:nth-child(2) {
     display: none !important;
   }
 
-  /* Hide time (last span + its pipe before) */
   .header-left span:nth-child(4),
   .header-left span:nth-child(5) {
     display: none !important;
   }
 
-  /* Keep only phone visible, align left */
   .header-left {
     flex: 1;
     justify-content: flex-start;
   }
 
-  /* Social icons align right */
   .header-right {
     flex: 1;
     justify-content: flex-end;
   }
 
-  /* Row top: phone left, social right */
   .header-top {
     display: flex;
     justify-content: space-between;
@@ -215,58 +350,24 @@
     font-size: 13px;
   }
 
-  /* Optional: hide "Follow us:" text in mobile */
   .follow-text {
     display: none;
   }
 
-  /* Header bottom adjustments */
   .header-bottom {
     padding: 10px 18px;
     height: 80px;
   }
 
-  /* Show hamburger */
+  /* Show hamburger on mobile */
   .hamburger {
     display: block;
-    z-index: 1004;
-    color: #111;
   }
 
-  /* Nav-menu as slide-out panel */
+  /* Hide desktop nav on mobile */
   .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -320px;
-    width: 320px;
-    height: 100vh;
-    background: #ffffff;
-    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.12);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 100px 22px;
-    gap: 18px;
-    transition: right 0.33s cubic-bezier(.2,.9,.2,1);
-    z-index: 1003;
-    margin-right: 0;
+    display: none;
   }
-
-  .nav-menu.open {
-    right: 0;
-  }
-
-  .nav-menu .nav-link {
-    font-size: 17px;
-    color: #222;
-    padding: 10px 6px;
-    width: 100%;
-    text-transform: none;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-  }
-
-  .nav-menu .nav-link::after { display: none; }
 
   .logo-container img {
     height: 60px;
@@ -279,7 +380,6 @@
   }
 }
 
-/* ✅ Mobile specific fixes for logo + text */
 @media (max-width: 768px) {
   .logo-container img {
     height: 40px;

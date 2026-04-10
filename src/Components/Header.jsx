@@ -43,7 +43,6 @@ const Header = () => {
       <header className="header">
         {/* First Row */}
         <div className="header-top">
-          {/* Left Side - keep desktop content exactly as before */}
           <div className="header-left">
             <span className="header-item">
               <FaMapMarkerAlt className="icon" /> 9, Nachinikinyar Street
@@ -62,7 +61,6 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Right Side (social) - unchanged visually for desktop; centered on mobile via CSS */}
           <div className="header-right">
             <span className="follow-text">Follow us:</span>
             <a
@@ -115,13 +113,9 @@ const Header = () => {
               <h3>Builders & Constructions</h3>
             </div>
           </div>
-          {/* Nav (desktop horizontal / mobile slide-out) */}
 
-          <nav
-            ref={navRef}
-            className={`nav-menu ${menuOpen ? "open" : ""}`}
-            aria-hidden={!menuOpen && window.innerWidth <= 992}
-          >
+          {/* Desktop Nav */}
+          <nav ref={navRef} className="nav-menu">
             <Link to="/" className="nav-link" onClick={handleNavClick}>
               Home
             </Link>
@@ -141,9 +135,10 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          {/* Hamburger (visible on mobile/smaller screens) */}
+
+          {/* Hamburger — toggles to X when open */}
           <button
-            className="hamburger"
+            className={`hamburger ${menuOpen ? "is-open" : ""}`}
             onClick={() => setMenuOpen((s) => !s)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
@@ -153,13 +148,63 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Overlay to close when clicking outside (only for mobile when menuOpen) */}
+      {/* Mobile Popup Overlay */}
       {menuOpen && (
         <div
-          className="menu-overlay"
+          className="mobile-nav-overlay"
           onClick={() => setMenuOpen(false)}
           aria-hidden="true"
-        />
+        >
+          <div
+            className="mobile-nav-popup"
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+          >
+            {/* Popup Header */}
+            <div className="popup-header">
+              <div className="popup-logo">
+                <img src="/img/companylogo.jpeg" alt="Logo" />
+                <span>Mark-O-Draft</span>
+              </div>
+            </div>
+
+            {/* Nav Links */}
+            <nav className="popup-nav">
+              <Link to="/" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">01</span> Home
+              </Link>
+              <Link to="/about" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">02</span> About
+              </Link>
+              <Link to="/projects" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">03</span> Projects
+              </Link>
+              <Link to="/service" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">04</span> Services
+              </Link>
+              <Link to="/careers" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">05</span> Careers
+              </Link>
+              <Link to="/contact" className="popup-link" onClick={handleNavClick}>
+                <span className="popup-link-num">06</span> Contact
+              </Link>
+            </nav>
+
+            {/* Popup Footer */}
+            <div className="popup-footer">
+              <a href="tel:8190859587" className="popup-contact-item">
+                <FaPhoneAlt /> +91 8190859587
+              </a>
+              <div className="popup-socials">
+                <a href="https://www.facebook.com/profile.php?id=61576484825469" target="_blank" rel="noreferrer" aria-label="facebook"><FaFacebook /></a>
+                <a href="https://www.instagram.com/markodraftindia/?hl=en" target="_blank" rel="noreferrer" aria-label="instagram"><FaInstagram /></a>
+                <a href="mailto:markodraftindia@gmail.com" aria-label="email"><SiGmail /></a>
+                <a href="https://www.linkedin.com/company/markodraft-builders-constructions/" target="_blank" rel="noreferrer" aria-label="linkedin"><FaLinkedin /></a>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </>
   );

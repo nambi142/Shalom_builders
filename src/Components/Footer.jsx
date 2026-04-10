@@ -94,10 +94,10 @@ const Footer = () => {
         {/* Contact */}
         <div className="footer-contact footer-animate">
           <h3>CONTACT US</h3>
-          <ul className="contact-info">  
+          <ul className="contact-info">
             <li>
               <a
-                href="https://www.google.com/maps/search/shalom+builders+tirunelveli/"
+                href="https://share.google/iQQZjdYpztAQweMS2"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -118,41 +118,21 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Useful Links */}
-        <div className="footer-links footer-animate">
-          <h3>USEFUL LINKS</h3>
-          <ul>
-            <li>
-              <Link to="/" className="footer-link">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="footer-link">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="footer-link">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/service" className="footer-link">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/careers" className="footer-link">
-                Careers
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="footer-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
+        {/* Google Map */}
+        <div className="footer-map footer-animate">
+          <h3>FIND US</h3>
+          <div className="map-container">
+            <iframe
+              title="company-location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.96677340519!2d77.71244250000001!3d8.7244113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411fb80e0f601%3A0xacc6a25a7f8df91!2sMarkodraft%20Builders%20and%20constructions!5e1!3m2!1sen!2sin!4v1775795379511!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
 

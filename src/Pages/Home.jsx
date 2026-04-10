@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "../Css/Home.css";
 import { FaTools, FaClock, FaUsers, FaHome } from "react-icons/fa";
+import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const videoRef = useRef(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleMute = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setMuted(video.muted);
+  };
+
   const projects = [
     {
       img: "/project-img/jam-nagar.jpg",
@@ -77,10 +88,27 @@ const Home = () => {
 
       {/* ---------- HERO VIDEO ---------- */}
       <div className="home-hero">
-        <video className="bg-video" autoPlay loop muted playsInline>
+        <video
+          ref={videoRef}
+          className="bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src="\video\MarkODraftBgVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
+        {/* Volume Toggle Button */}
+        <button
+          type="button"
+          className="volume-btn"
+          onClick={toggleMute}
+          aria-label={muted ? "Unmute" : "Mute"}
+        >
+          {muted ? <HiVolumeOff /> : <HiVolumeUp />}
+        </button>
       </div>
 
       {/* ---------- FEATURES SECTION ---------- */}
