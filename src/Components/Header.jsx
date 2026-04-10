@@ -164,7 +164,7 @@ const Header = () => {
             {/* Popup Header */}
             <div className="popup-header">
               <div className="popup-logo">
-                <img src="/img/companylogo.jpeg" alt="Logo" />
+                <img src="/img/companylogo-removebg-preview.png" alt="Logo" />
                 <span>Mark-O-Draft</span>
               </div>
             </div>

@@ -57,7 +57,7 @@ const Footer = () => {
         {/* About */}
         <div className="footer-about footer-animate">
           <div className="footer-logo">
-            <img src="\img\companylogo.jpeg" alt="Mark-O-Draft Logo" />
+            <img src="/img/companylogo-removebg-preview.png" alt="Mark-O-Draft Logo" />
             <h2>Mark-O-Draft</h2>
           </div>
           <p>
