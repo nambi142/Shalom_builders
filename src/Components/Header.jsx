@@ -107,7 +107,7 @@ const Header = () => {
         <div className="header-bottom">
           {/* Logo + Company Name */}
           <div className="logo-container">
-            <img src="/img/companylogo.jpeg" alt="Company Logo" />
+            <img src="/img/companylogo-removebg-preview.png" alt="Company Logo" />
             <div className="company-text">
               <h2>Mark-O-Draft</h2>
               <h3>Builders & Constructions</h3>
