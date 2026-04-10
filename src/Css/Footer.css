@@ -18,19 +18,19 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 15px;
 }
 
 .footer-logo img {
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
 }
 
 .footer-logo h2 {
   font-size: 27px;
   font-weight: bold;
-  color: #ccc;
+  color: #ab4e23;
 }
 
 .footer-about p {
@@ -175,25 +175,10 @@
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-map {
-    grid-column: 1 / -1;
-  }
-
-  .map-container {
-    height: 220px;
-  }
-}
-
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: left;
+    text-align: left; /* was: center */
   }
 
   .footer-logo {
@@ -224,10 +209,9 @@
 
 /* Fix for mobile view: move scroll button away from copyright */
 @media (max-width: 600px) {
-  .scroll-top-btn {
-    right: 15px;
-    bottom: 60px;
-    top: auto;
-    transform: none;
+  .footer-contact h3,
+  .footer-map h3 {
+    display: block;        /* overrides inline-block so it left-aligns naturally */
+    text-align: left;
   }
 }
