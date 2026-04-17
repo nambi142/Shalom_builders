@@ -41,12 +41,9 @@ const Home = () => {
 
   return (
     <div>
-
       {/* SEO Optimization */}
       <Helmet>
-        <title>
-          Mark-O-Draft | Construction & Realestate 
-        </title>
+        <title>Mark-O-Draft | Construction & Realestate</title>
 
         <meta
           name="description"
@@ -114,7 +111,9 @@ const Home = () => {
       {/* ---------- FEATURES SECTION ---------- */}
       <section className="features-section">
         <div className="features-inner">
-          <h2 className="features-title">Mark-O-Draft - TOP BUILDING CONTRACTOR</h2>
+          <h2 className="features-title">
+            Mark-O-Draft - TOP BUILDING CONTRACTOR
+          </h2>
 
           {/* Decorative line + House icon */}
           <div className="title-deco">
@@ -126,7 +125,11 @@ const Home = () => {
           </div>
 
           <p className="features-subtitle">
-            At Mark-O-Draft, we specialize in delivering high Premium-quality, on-time, and trusted construction services That start from Rs.1900 to 3000 with Free Home Appliances, Solar and other advanced Technologies throuhout Tamilnadu. (Home, Warehouse, Commercial Shops and Cold storage) 
+            At Mark-O-Draft, we specialize in delivering high Premium-quality,
+            on-time, and trusted construction services That start from Rs.1900
+            to 3000 with Free Home Appliances, Solar and other advanced
+            Technologies throuhout Tamilnadu. (Home, Warehouse, Commercial Shops
+            and Cold storage)
           </p>
 
           {/* Services row */}
@@ -187,7 +190,7 @@ const Home = () => {
                       <p className="featured-category">{project.category}</p>
                     </div>
                   </div>
-                ))
+                )),
               )}
             </div>
           </div>

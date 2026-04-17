@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "../Css/Service.css";
 import {
   FaTools,
@@ -23,7 +24,7 @@ const Service = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     cards.forEach((card) => observer.observe(card));
@@ -35,8 +36,26 @@ const Service = () => {
 
   return (
     <div>
-      {/* ---------- OUR SERVICES SECTION ---------- */}
+      <Helmet>
+        <title>
+          Affordable Construction & Renovation Services | Electrical | Plumbing
+          | Paints
+        </title>
 
+        <meta
+          name="description"
+          content="Affordable construction services starting from ₹1900/sq.ft. for residential, commercial, industrial, warehouse & cold storage buildings. Premium quality renovation, plumbing, electrical, painting & modern design solutions with free home appliances."
+        />
+
+        <meta
+          name="keywords"
+          content="affordable construction, house construction India, renovation services, remodeling, plumbing services, electrical works, painting services, 3D design, architectural planning, commercial construction, residential construction"
+        />
+
+        <link rel="canonical" href="https://markodraft.com/services" />
+      </Helmet>
+
+      {/* ---------- OUR SERVICES SECTION ---------- */}
       <section class="page-hero">
         <div class="hero-content">
           <h1 class="page-title">OUR SERVICES</h1>
@@ -56,7 +75,13 @@ const Service = () => {
               At Mark-O-Draft, we provide a wide range of professional
               construction and design solutions. From interior decoration to
               full-scale commercial projects, we ensure quality, trust, and
-              modern designs. Premium home construction services starting form 1900 - 3000 per sq.ft. with teak wook finishing, fingerprint sensor doors, fire sppression system, anti-leak and water-absoption-proof walls and American-style modern design-delivering durable, const-effective construction that's truly worth the investment. 1 Lakh worth Home appliances for Fully free
+              modern designs. Premium home construction services starting form
+              1900 - 3000 per sq.ft. with teak wook finishing, fingerprint
+              sensor doors, fire sppression system, anti-leak and
+              water-absoption-proof walls and American-style modern
+              design-delivering durable, const-effective construction that's
+              truly worth the investment. 1 Lakh worth Home appliances for Fully
+              free
             </p>
           </div>
 
@@ -91,10 +116,7 @@ const Service = () => {
                 homes and offices with care.
               </p>
               <div className="service-img-box">
-                <img
-                  src="/img/renovation.jpg"
-                  alt="Renovation & Remodeling"
-                />
+                <img src="/img/renovation.jpg" alt="Renovation & Remodeling" />
               </div>
             </div>
 
@@ -124,10 +146,7 @@ const Service = () => {
                 construction journey.
               </p>
               <div className="service-img-box">
-                <img
-                  src="/img/planappruval.jpg"
-                  alt="Plan Approval & Design"
-                />
+                <img src="/img/planappruval.jpg" alt="Plan Approval & Design" />
               </div>
             </div>
 

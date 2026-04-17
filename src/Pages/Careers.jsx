@@ -1,12 +1,52 @@
 import React from "react";
-import "../Css/Careers.css"; 
-import certificateImg from "/img/Certificate.jpg"; 
+import { Helmet } from "react-helmet-async";
+import "../Css/Careers.css";
+import certificateImg from "/img/Certificate.jpg";
 import { Link } from "react-router-dom";
 
 const Careers = () => {
   return (
     <div>
-      {/* Careers Hero Section */}
+      <Helmet>
+        <title>
+          Join Our Growing Construction Team | Careers | Markodraft Builders
+        </title>
+        <meta
+          name="description"
+          content="Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth."
+        />
+        <meta
+          name="keywords"
+          content="careers Markodraft, construction jobs Tirunelveli, civil engineering internship Tamilnadu, building construction jobs, construction career opportunities, internship construction company, join Markodraft Builders"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.markodraft.com/careers" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Join Our Growing Construction Team | Careers | Markodraft Builders"
+        />
+        <meta
+          property="og:description"
+          content="Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth."
+        />
+        <meta property="og:url" content="https://www.markodraft.com/careers" />
+        <meta
+          property="og:image"
+          content="https://www.markodraft.com/img/logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers | Markodraft Builders" />
+        <meta
+          name="twitter:description"
+          content="Build your career with us. Exciting opportunities in construction, design, and sales."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.markodraft.com/img/logo.png"
+        />
+      </Helmet>
+
       <section className="careers-hero">
         <div className="careers-hero-content">
           <h1 className="careers-title">CAREERS</h1>
@@ -19,7 +59,6 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Careers Body */}  
       <section className="careers-body">
         <div className="careers-container">
           <h2>Join Our Team</h2>
@@ -30,11 +69,10 @@ const Careers = () => {
             environment.
           </p>
 
-          {/* Internship Section */}
           <div className="careers-internship">
             <h3>Internship Opportunities</h3>
             <p>
-              Mark-O-Draft offers a 03-month Civil Engineering Internship**
+              Mark-O-Draft offers a 03-month Civil Engineering Internship
               designed to give students hands-on experience in real construction
               projects. Gain practical knowledge, work with our experts, and
               prepare for a successful career in the construction industry.
@@ -68,26 +106,23 @@ const Careers = () => {
             </div>
           </div>
 
-          {/* Certificate Section */}
           <div className="careers-certificate">
             <h3>Professional Certification</h3>
             <p>
               After successfully completing the 3-month internship, interns will
-              receive a professional certificate from Mark-O-Draft
-              recognizing their skills and contribution. This certificate
-              enhances your career prospects in the construction and engineering
-              industry.
+              receive a professional certificate from Mark-O-Draft recognizing
+              their skills and contribution. This certificate enhances your
+              career prospects in the construction and engineering industry.
             </p>
             <img
               src={certificateImg}
               alt="Internship Certificate"
               className="certificate-img"
               draggable="false"
-              onContextMenu={(e) => e.preventDefault()} // prevent right-click
+              onContextMenu={(e) => e.preventDefault()}
             />
           </div>
 
-          {/* Contact Section */}
           <div className="careers-contact">
             <h3>Contact Us</h3>
             <p>
@@ -99,7 +134,7 @@ const Careers = () => {
               </li>
               <li>
                 Email:{" "}
-                <a href="mailto:Shalombuilderstvl@gmail.com">
+                <a href="mailto:markodraftindia@gmail.com">
                   markodraftindia@gmail.com
                 </a>
               </li>

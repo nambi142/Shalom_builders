@@ -1,5 +1,5 @@
-// src/Pages/Contact.jsx
 import React, { useRef, useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { FiPhone, FiMail, FiMapPin, FiClock } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_kab7kgp", // Service ID
-        "template_cbl7xub", // Template ID
+        "service_kab7kgp",
+        "template_cbl7xub",
         form.current,
-        "Gb8mUmlWFlBcxZX4d", // Public Key
+        "Gb8mUmlWFlBcxZX4d",
       )
       .then(
         () => {
@@ -35,7 +35,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
-          console.error("FAILED...", error); // log full error
+          console.error("FAILED...", error);
           setMessage("❌ Failed to send message. Please try again.");
           setLoading(false);
         },
@@ -44,7 +44,95 @@ const Contact = () => {
 
   return (
     <div>
-      {/* Contact Hero Section */}
+      <Helmet>
+        <title>
+          Free Consultation | Get in Touch with Our Construction Experts |
+          Markodraft Builders
+        </title>
+        <meta
+          name="description"
+          content="Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance. Package starts ₹1900."
+        />
+        <meta
+          name="keywords"
+          content="contact Markodraft Builders, construction consultation Tirunelveli, free consultation construction, contact construction company Tamilnadu, construction inquiry Tirunelveli, residential construction contact, commercial construction contact, interior design consultation, construction package ₹1900"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.markodraft.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Free Consultation | Get in Touch with Our Construction Experts | Markodraft Builders"
+        />
+        <meta
+          property="og:description"
+          content="Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance. Package starts ₹1900."
+        />
+        <meta property="og:url" content="https://www.markodraft.com/contact" />
+        <meta
+          property="og:image"
+          content="https://www.markodraft.com/img/logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Free Consultation | Markodraft Builders"
+        />
+        <meta
+          name="twitter:description"
+          content="Contact us for residential, commercial, and interior projects. Package starts ₹1900."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.markodraft.com/img/logo.png"
+        />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Markodraft Builders",
+            "url": "https://www.markodraft.com/contact",
+            "description": "Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance.",
+            "mainEntity": {
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Markodraft Builders",
+              "url": "https://www.markodraft.com",
+              "logo": "https://www.markodraft.com/img/logo.png",
+              "telephone": "+918190859587",
+              "email": "markodraftindia@gmail.com",
+              "priceRange": "₹₹",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "9, Nachinikinyar Street, Kokkirakulam, Palaymkottai",
+                "addressLocality": "Tirunelveli",
+                "addressRegion": "Tamilnadu",
+                "postalCode": "627009",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 8.7139,
+                "longitude": 77.7567
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+918190859587",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Tamil"]
+              }
+            }
+          }
+        `}</script>
+      </Helmet>
+
       <section className="contact-hero">
         <div className="contact-hero-content">
           <h1 className="contact-title">CONTACT US</h1>
@@ -57,48 +145,47 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Content */}
       <section className="contact-body">
         <div className="contact-container">
           <h2>Contact Us</h2>
 
-          {/* Contact Info Boxes */}
           <div className="contact-info-grid">
-            {/* Phone */}
             <div className="contact-info-box">
               <div className="contact-icon">
                 <FiPhone />
               </div>
               <h3>Phone Number</h3>
-              <p>
+              <p className="contact-highlight-phone">
                 <a href="tel:8190859587">+91 81908 59587</a>
               </p>
             </div>
 
-            {/* Email */}
             <div className="contact-info-box">
               <div className="contact-icon">
                 <FiMail />
               </div>
               <h3>Contact Email</h3>
               <p>
-                <a href="mailto:markodraftindia@gmail.com">markodraftindia@gmail.com</a>
+                <a href="mailto:markodraftindia@gmail.com">
+                  markodraftindia@gmail.com
+                </a>
               </p>
             </div>
 
-            {/* Location */}
             <div className="contact-info-box">
               <div className="contact-icon">
                 <FiMapPin />
               </div>
               <h3>Our Location</h3>
-              <p>
-                9, Nachinikinyar Street Kokkirakulam, Palaymkottai, Tirunelveli,
+              <address className="contact-highlight-address">
+                9, Nachinikinyar Street, Kokkirakulam,
+                <br />
+                Palaymkottai, Tirunelveli,
+                <br />
                 Tamilnadu - 627009
-              </p>
+              </address>
             </div>
 
-            {/* Business Hours */}
             <div className="contact-info-box">
               <div className="contact-icon">
                 <FiClock />
@@ -109,9 +196,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form Section */}
           <div className="contact-form-wrapper">
-            {/* Left - Form */}
             <form ref={form} onSubmit={sendEmail} className="contact-form">
               <div className="form-row">
                 <input
@@ -163,12 +248,8 @@ const Contact = () => {
               {message && <p className="form-status">{message}</p>}
             </form>
 
-            {/* Right - Image */}
             <div className="contact-image">
-              <img
-                src="/img/brand.jpeg"
-                alt="Contact Illustration"
-              />
+              <img src="/img/brand.jpeg" alt="Contact Markodraft Builders" />
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ const useCountUp = (target, duration = 1800) => {
           const tick = (now) => {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            const eased = 1 - Math.pow(1 - progress, 3); 
             setCount(Math.floor(eased * target));
             if (progress < 1) requestAnimationFrame(tick);
           };
@@ -39,7 +39,7 @@ const useCountUp = (target, duration = 1800) => {
           observer.disconnect();
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     observer.observe(el);
@@ -55,7 +55,10 @@ const AchievementCard = ({ icon, target, suffix, label }) => {
   return (
     <div className="achievement-card" ref={ref}>
       {icon}
-      <h3>{count}{suffix}</h3>
+      <h3>
+        {count}
+        {suffix}
+      </h3>
       <p>{label}</p>
     </div>
   );
