@@ -41,110 +41,83 @@ const Projects = () => {
       <Helmet>
         {/* ✅ Page Title */}
         <title>
-          Explore Our Residential & Commercial Construction Projects |
-          Markodraft Builders
+          Construction Projects in Tirunelveli | Markodraft Builders Portfolio
         </title>
 
         {/* ✅ Basic SEO */}
         <meta
           name="description"
-          content="View our completed construction projects showcasing quality homes, interiors, wired electrical, masonry and plumbing works by Markodraft Builders in Tirunelveli, Tamil Nadu."
+          content="Explore our completed residential and commercial construction projects in Tirunelveli, Tamil Nadu. Markodraft Builders delivers quality homes, interiors, electrical, masonry, and plumbing works."
         />
+
         <meta
           name="keywords"
-          content="construction projects Tirunelveli, residential construction Tamil Nadu, commercial building projects, completed homes Tirunelveli, interior works, electrical wiring projects, masonry works, plumbing works, Markodraft Builders projects"
+          content="construction projects Tirunelveli, builders portfolio Tamil Nadu, residential projects Tirunelveli, commercial construction projects, interior works, electrical wiring, masonry works, plumbing services Markodraft"
         />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.markodraft.com/projects" />
 
-        {/* ✅ Open Graph - Facebook & Instagram */}
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://markodraft.com/projects" />
+
+        {/* ✅ Open Graph */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Explore Our Residential & Commercial Construction Projects | Markodraft Builders"
+          content="Construction Projects in Tirunelveli | Markodraft Builders"
         />
         <meta
           property="og:description"
-          content="View our completed construction projects showcasing quality homes, interiors, wired electrical, masonry and plumbing works by Markodraft Builders in Tirunelveli, Tamil Nadu."
+          content="View our completed residential and commercial construction projects in Tirunelveli. Quality homes, interiors, and full building services by Markodraft Builders."
         />
-        <meta property="og:url" content="https://www.markodraft.com/projects" />
+        <meta property="og:url" content="https://markodraft.com/projects" />
         <meta
           property="og:image"
-          content="https://www.markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/logo.png"
         />
         <meta property="og:site_name" content="Markodraft Builders" />
         <meta property="og:locale" content="en_IN" />
 
-        {/* ✅ Google Maps - Local Business Schema */}
+        {/* ✅ Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Markodraft Projects | Construction Works in Tirunelveli"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore completed construction projects including homes, interiors, and commercial buildings by Markodraft Builders."
+        />
+        <meta
+          name="twitter:image"
+          content="https://markodraft.com/img/logo.png"
+        />
+
+        {/* ✅ Structured Data */}
         <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Markodraft Builders",
-            "url": "https://www.markodraft.com",
-            "logo": "https://www.markodraft.com/img/logo.png",
-            "image": "https://www.markodraft.com/img/logo.png",
-            "description": "Markodraft Builders offers residential and commercial construction services including homes, interiors, electrical, masonry and plumbing works in Tirunelveli, Tamil Nadu.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Tirunelveli",
-              "addressRegion": "Tamil Nadu",
-              "addressCountry": "IN"
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Construction Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Residential Construction"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Commercial Construction"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Interior Works"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Electrical Wiring"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Masonry Works"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Plumbing Works"
-                  }
-                }
-              ]
-            },
-            "sameAs": [
-              "https://www.facebook.com/profile.php?id=61576484825469",
-              "https://www.instagram.com/markodraftindia/?hl=en"
-            ]
-          }
-        `}</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Markodraft Builders",
+      "url": "https://markodraft.com",
+      "logo": "https://markodraft.com/img/logo.png",
+      "image": "https://markodraft.com/img/logo.png",
+      "description": "Markodraft Builders provides residential and commercial construction services in Tirunelveli including interiors, electrical, masonry and plumbing works.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Tirunelveli"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tirunelveli",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61576484825469",
+        "https://www.instagram.com/markodraftindia/?hl=en"
+      ]
+    }
+  `}</script>
       </Helmet>
 
       {/* Projects Hero Section */}

@@ -45,92 +45,93 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
+        {/* // Title */}
         <title>
-          Free Consultation | Get in Touch with Our Construction Experts |
-          Markodraft Builders
+          Contact Markodraft Builders | Free Construction Consultation
+          Tirunelveli
         </title>
+
+        {/* // Basic SEO */}
         <meta
           name="description"
-          content="Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance. Package starts ₹1900."
+          content="Contact Markodraft Builders for residential and commercial construction in Tirunelveli. Get free consultation, expert guidance, and affordable building packages starting from ₹1900."
         />
+
         <meta
           name="keywords"
-          content="contact Markodraft Builders, construction consultation Tirunelveli, free consultation construction, contact construction company Tamilnadu, construction inquiry Tirunelveli, residential construction contact, commercial construction contact, interior design consultation, construction package ₹1900"
+          content="contact Markodraft Builders, construction consultation Tirunelveli, builders contact Tamil Nadu, house construction inquiry, interior design consultation, construction services contact"
         />
+
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.markodraft.com/contact" />
+
+        {/* // Canonical (fixed no www) */}
+        <link rel="canonical" href="https://markodraft.com/contact" />
+
+        {/* // Open Graph */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Free Consultation | Get in Touch with Our Construction Experts | Markodraft Builders"
+          content="Contact Markodraft Builders | Construction Experts Tirunelveli"
         />
         <meta
           property="og:description"
-          content="Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance. Package starts ₹1900."
+          content="Get in touch with Markodraft Builders for residential, commercial, and interior construction services in Tirunelveli."
         />
-        <meta property="og:url" content="https://www.markodraft.com/contact" />
+        <meta property="og:url" content="https://markodraft.com/contact" />
         <meta
           property="og:image"
-          content="https://www.markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/logo.png"
         />
+
+        {/* // Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Free Consultation | Markodraft Builders"
-        />
+        <meta name="twitter:title" content="Contact Markodraft Builders" />
         <meta
           name="twitter:description"
-          content="Contact us for residential, commercial, and interior projects. Package starts ₹1900."
+          content="Reach out for construction services and free consultation in Tirunelveli."
         />
         <meta
           name="twitter:image"
-          content="https://www.markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/logo.png"
         />
+
+        {/* // Structured Data */}
         <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Markodraft Builders",
-            "url": "https://www.markodraft.com/contact",
-            "description": "Contact our construction team today for residential, commercial, and interior projects. Get free consultation and expert guidance.",
-            "mainEntity": {
-              "@type": "HomeAndConstructionBusiness",
-              "name": "Markodraft Builders",
-              "url": "https://www.markodraft.com",
-              "logo": "https://www.markodraft.com/img/logo.png",
-              "telephone": "+918190859587",
-              "email": "markodraftindia@gmail.com",
-              "priceRange": "₹₹",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "9, Nachinikinyar Street, Kokkirakulam, Palaymkottai",
-                "addressLocality": "Tirunelveli",
-                "addressRegion": "Tamilnadu",
-                "postalCode": "627009",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 8.7139,
-                "longitude": 77.7567
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-                  "opens": "09:00",
-                  "closes": "18:00"
-                }
-              ],
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+918190859587",
-                "contactType": "customer service",
-                "availableLanguage": ["English", "Tamil"]
-              }
-            }
-          }
-        `}</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Markodraft Builders",
+      "url": "https://markodraft.com/contact",
+      "mainEntity": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Markodraft Builders",
+        "url": "https://markodraft.com",
+        "logo": "https://markodraft.com/img/logo.png",
+        "telephone": "+918190859587",
+        "email": "markodraftindia@gmail.com",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9, Nachinikinyar Street, Kokkirakulam, Palayamkottai",
+          "addressLocality": "Tirunelveli",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "627009",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 8.7139,
+          "longitude": 77.7567
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+918190859587",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Tamil"]
+        }
+      }
+    }
+  `}</script>
       </Helmet>
 
       <section className="contact-hero">

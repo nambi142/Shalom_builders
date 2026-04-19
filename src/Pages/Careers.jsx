@@ -8,57 +8,65 @@ const Careers = () => {
   return (
     <div>
       <Helmet>
-        {/* ✅ Page Title */}
+        {/* // Title */}
         <title>
-          Join Our Growing Construction Team | Careers | Markodraft Builders
+          Construction Careers in Tirunelveli | Join Markodraft Builders Team
         </title>
 
-        {/* ✅ Basic SEO */}
+        {/* // Basic SEO */}
         <meta
           name="description"
-          content="Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth."
+          content="Explore construction jobs and internships in Tirunelveli with Markodraft Builders. Join our team for opportunities in civil engineering, design, and building construction."
         />
+
         <meta
           name="keywords"
-          content="careers Markodraft, construction jobs Tirunelveli, civil engineering internship Tamilnadu, building construction jobs, construction career opportunities, internship construction company, join Markodraft Builders"
+          content="construction jobs Tirunelveli, careers Markodraft Builders, civil engineering jobs Tamil Nadu, construction internships Tirunelveli, building construction careers, join construction company"
         />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.markodraft.com/careers" />
 
-        {/* ✅ Open Graph - Facebook & Instagram */}
+        <meta name="robots" content="index, follow" />
+
+        {/* // Canonical (fixed no www) */}
+        <link rel="canonical" href="https://markodraft.com/careers" />
+
+        {/* // Open Graph */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Join Our Growing Construction Team | Careers | Markodraft Builders"
+          content="Construction Careers in Tirunelveli | Markodraft Builders"
         />
         <meta
           property="og:description"
-          content="Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth."
+          content="Join Markodraft Builders for careers in construction, civil engineering, and design. Grow your career in Tirunelveli."
         />
-        <meta property="og:url" content="https://www.markodraft.com/careers" />
+        <meta property="og:url" content="https://markodraft.com/careers" />
         <meta
           property="og:image"
-          content="https://www.markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/logo.png"
         />
         <meta property="og:site_name" content="Markodraft Builders" />
         <meta property="og:locale" content="en_IN" />
 
-        {/* ✅ Google Maps - Local Business Schema */}
+        {/* // Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers at Markodraft Builders" />
+        <meta
+          name="twitter:description"
+          content="Explore construction jobs and internships in Tirunelveli with Markodraft Builders."
+        />
+        <meta
+          name="twitter:image"
+          content="https://markodraft.com/img/logo.png"
+        />
+
+        {/* // Structured Data */}
         <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "Organization",
       "name": "Markodraft Builders",
-      "url": "https://www.markodraft.com",
-      "logo": "https://www.markodraft.com/img/logo.png",
-      "image": "https://www.markodraft.com/img/logo.png",
-      "description": "Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tirunelveli",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
-      },
+      "url": "https://markodraft.com",
+      "logo": "https://markodraft.com/img/logo.png",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61576484825469",
         "https://www.instagram.com/markodraftindia/?hl=en"

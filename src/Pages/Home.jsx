@@ -43,7 +43,6 @@ const Home = () => {
     <div>
       {/* SEO Optimization */}
       <Helmet>
-        <title>Mark-O-Draft | Construction & Realestate</title>
 
         <meta
           name="description"

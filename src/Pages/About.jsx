@@ -30,7 +30,7 @@ const useCountUp = (target, duration = 1800) => {
           const tick = (now) => {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3); 
+            const eased = 1 - Math.pow(1 - progress, 3);
             setCount(Math.floor(eased * target));
             if (progress < 1) requestAnimationFrame(tick);
           };
@@ -85,7 +85,7 @@ const About = () => {
 
         <meta name="robots" content="index, follow" />
 
-        <link rel="canonical" href="https://shalombuilders.com/about" />
+        <link rel="canonical" href="https://markodraft.com/about" />
 
         <meta
           property="og:title"
@@ -98,8 +98,11 @@ const About = () => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://shalombuilders.com/about" />
-        <meta property="og:image" content="/img/about-us.jpg" />
+        <meta property="og:url" content="https://markodraft.com/about" />
+        <meta
+          property="og:image"
+          content="https://markodraft.com/img/logo.png"
+        />
       </Helmet>
 
       {/* Hero Section */}
