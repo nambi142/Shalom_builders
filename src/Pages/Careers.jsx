@@ -8,9 +8,12 @@ const Careers = () => {
   return (
     <div>
       <Helmet>
+        {/* ✅ Page Title */}
         <title>
           Join Our Growing Construction Team | Careers | Markodraft Builders
         </title>
+
+        {/* ✅ Basic SEO */}
         <meta
           name="description"
           content="Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth."
@@ -21,6 +24,8 @@ const Careers = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.markodraft.com/careers" />
+
+        {/* ✅ Open Graph - Facebook & Instagram */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
@@ -35,16 +40,31 @@ const Careers = () => {
           property="og:image"
           content="https://www.markodraft.com/img/logo.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers | Markodraft Builders" />
-        <meta
-          name="twitter:description"
-          content="Build your career with us. Exciting opportunities in construction, design, and sales."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.markodraft.com/img/logo.png"
-        />
+        <meta property="og:site_name" content="Markodraft Builders" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* ✅ Google Maps - Local Business Schema */}
+        <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Markodraft Builders",
+      "url": "https://www.markodraft.com",
+      "logo": "https://www.markodraft.com/img/logo.png",
+      "image": "https://www.markodraft.com/img/logo.png",
+      "description": "Build your career with us. We offer exciting opportunities in building construction, design, and sales with professional growth.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tirunelveli",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61576484825469",
+        "https://www.instagram.com/markodraftindia/?hl=en"
+      ]
+    }
+  `}</script>
       </Helmet>
 
       <section className="careers-hero">
