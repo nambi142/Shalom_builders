@@ -1,8 +1,8 @@
-# Force redirect Netlify subdomain to custom domain
-https://markodraf.netlify.app/* https://markodraft.com/:splat 301!
+# Force redirect Netlify subdomain → custom domain
+https://markodraft.netlify.app/*  https://markodraft.com/:splat  301!
 
-# Redirect www to non-www
-https://www.markodraft.com/* https://markodraft.com/:splat 301!
+# Redirect www → non-www
+https://www.markodraft.com/*  https://markodraft.com/:splat  301!
 
-# SPA fallback (React Router support)
-/*    /index.html   200
+# React SPA fallback (MUST BE LAST)
+/*  /index.html  200
