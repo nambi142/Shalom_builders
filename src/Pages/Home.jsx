@@ -43,41 +43,54 @@ const Home = () => {
     <div>
       {/* SEO Optimization */}
       <Helmet>
+        {/* Title (MOST IMPORTANT) */}
+        <title>
+          Markodraft Builders | Best Construction Company in Tirunelveli, Tamil
+          Nadu
+        </title>
 
+        {/* Meta Description */}
         <meta
           name="description"
-          content="We are Quality based Service Provider | Best Building construction | Electrical & Plumbing Maintenance | Remodel & Masonry repair. Affordable house construction company in Tirunelveli providing interior, exterior, elevation, painting, plastering, carpentry and complete construction services across Tamil Nadu."
+          content="Markodraft Builders is a trusted construction company in Tirunelveli offering house construction, renovation, interior and exterior design services across Tamil Nadu. Affordable, reliable and quality-focused builders."
         />
 
+        {/* Keywords (clean & focused) */}
         <meta
           name="keywords"
-          content="construction builders Tirunelveli, house building Tirunelveli, home construction Tamilnadu, building construction contractor, construction company Tirunelveli, construction cost per sq ft, low cost house construction, low budget house construction, house construction cost Tamilnadu, carpentry services, affordable construction services, interior construction, exterior construction, elevation design, painting services, plastering work, curing construction work, column and footing construction, best builders in tirunelveli, construction companies in tirunelveli, markodraft builders and construction, markodraft builders, markodraft"
+          content="Markodraft, Markodraft Builders, Markodraft Construction,
+              builders in Tirunelveli, best builders in Tirunelveli,
+              construction company in Tirunelveli, house construction Tirunelveli,
+              building contractors Tirunelveli, residential construction Tirunelveli,
+              commercial construction Tirunelveli, builders in Tamil Nadu,
+              construction company Tamil Nadu, house construction Tamil Nadu,
+              home renovation Tirunelveli, interior design Tirunelveli,
+              exterior construction services, carpentry services Tirunelveli,
+              low cost house construction Tirunelveli,
+              affordable builders Tirunelveli,
+              budget house construction Tamil Nadu,
+              independent house builders Tirunelveli"
         />
 
         <meta name="robots" content="index, follow" />
 
-        <link
-          rel="canonical"
-          href="https://markodraft.com/home/building-contractor"
-        />
+        {/* Correct Canonical URL */}
+        <link rel="canonical" href="https://markodraft.com/" />
 
         {/* Open Graph SEO */}
         <meta
           property="og:title"
-          content="Budget Friendly House Construction in Tirunelveli | Expert Builders"
+          content="Markodraft Builders | Trusted Construction Company in Tirunelveli"
         />
 
         <meta
           property="og:description"
-          content="Best building construction company in Tirunelveli providing affordable house construction, electrical and plumbing maintenance, remodeling and masonry repair."
+          content="Looking for reliable builders in Tirunelveli? Markodraft Builders offers complete construction, renovation, and interior services across Tamil Nadu."
         />
 
         <meta property="og:type" content="website" />
 
-        <meta
-          property="og:url"
-          content="https://markodraft.com/home/building-contractor"
-        />
+        <meta property="og:url" content="https://markodraft.com/" />
 
         <meta property="og:image" content="/project-img/jam-nagar.jpg" />
       </Helmet>

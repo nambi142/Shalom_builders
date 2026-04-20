@@ -80,7 +80,18 @@ const About = () => {
 
         <meta
           name="keywords"
-          content="construction builders Tirunelveli, house building Tirunelveli, home construction Tamilnadu, home contractors Tirunelveli, building construction contractor, building construction company, construction cost per sq ft, low cost house construction, low budget house construction, house construction cost Tamilnadu, carpentry services, construction company Tirunelveli, affordable construction services, interior construction, exterior construction, elevation design, painting services, plastering work, curing construction work, column and footing construction"
+          content="Markodraft, Markodraft Builders, Markodraft Construction,
+              builders in Tirunelveli, best builders in Tirunelveli,
+              construction company in Tirunelveli, house construction Tirunelveli,
+              building contractors Tirunelveli, residential construction Tirunelveli,
+              commercial construction Tirunelveli, builders in Tamil Nadu,
+              construction company Tamil Nadu, house construction Tamil Nadu,
+              home renovation Tirunelveli, interior design Tirunelveli,
+              exterior construction services, carpentry services Tirunelveli,
+              low cost house construction Tirunelveli,
+              affordable builders Tirunelveli,
+              budget house construction Tamil Nadu,
+              independent house builders Tirunelveli"
         />
 
         <meta name="robots" content="index, follow" />

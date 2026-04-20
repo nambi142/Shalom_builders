@@ -59,7 +59,18 @@ const Contact = () => {
 
         <meta
           name="keywords"
-          content="contact Markodraft Builders, construction consultation Tirunelveli, builders contact Tamil Nadu, house construction inquiry, interior design consultation, construction services contact"
+          content="Markodraft, Markodraft Builders, Markodraft Construction,
+              builders in Tirunelveli, best builders in Tirunelveli,
+              construction company in Tirunelveli, house construction Tirunelveli,
+              building contractors Tirunelveli, residential construction Tirunelveli,
+              commercial construction Tirunelveli, builders in Tamil Nadu,
+              construction company Tamil Nadu, house construction Tamil Nadu,
+              home renovation Tirunelveli, interior design Tirunelveli,
+              exterior construction services, carpentry services Tirunelveli,
+              low cost house construction Tirunelveli,
+              affordable builders Tirunelveli,
+              budget house construction Tamil Nadu,
+              independent house builders Tirunelveli, contact Markodraft Builders, construction consultation Tirunelveli, builders contact Tamil Nadu, house construction inquiry, interior design consultation, construction services contact"
         />
 
         <meta name="robots" content="index, follow" />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://markodraft.com/sitemap.xml
