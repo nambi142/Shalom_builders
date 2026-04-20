@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_kab7kgp",
-        "template_cbl7xub",
+        "service_2cp1fat",
+        "template_tao6h0g",
         form.current,
-        "Gb8mUmlWFlBcxZX4d",
+        "vXHiolko0v9eEP6DA",
       )
       .then(
         () => {
@@ -213,23 +213,21 @@ const Contact = () => {
               <div className="form-row">
                 <input
                   type="text"
-                  name="name"
+                  name="from_name"
                   placeholder="Your Name"
                   required
                 />
                 <input
                   type="email"
-                  name="email"
+                  name="from_email"
                   placeholder="Email Address"
                   required
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  title="Please enter a valid email address"
                 />
               </div>
               <div className="form-row">
                 <input
                   type="tel"
-                  name="phone"
+                  name="from_phone"
                   placeholder="Phone Number"
                   required
                   pattern="[0-9]{10}"
