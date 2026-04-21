@@ -21,16 +21,16 @@ function App() {
       <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="/About" element={<About />} />
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/gallery/:id" element={<Gallery />} />
-        <Route path="/Service" element={<Service />} />
-        <Route path="/Careers" element={<Careers />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/upload" element={<UploadProjects />} />
       </Routes>
       <Footer />
-      <UploadProjects />
     </div>
   );
 }

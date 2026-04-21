@@ -244,7 +244,7 @@ const About = () => {
                 </a>
               </li>
               <li>
-                <strong>Experience:</strong> 2 Years
+                <strong>Experience:</strong> 4 Years
               </li>
               <li>
                 <strong>Availability:</strong> Full Time
