@@ -80,7 +80,9 @@ const About = () => {
 
         <meta
           name="keywords"
-          content="Markodraft, Markodraft Builders, Markodraft Construction,
+          content="about markodraft, markodraft team, markodraft proprietor,
+              construction company tirunelveli about, who is markodraft,
+              markodraft builders team tirunelveli, Markodraft, Markodraft Builders, Markodraft Construction,
               builders in Tirunelveli, best builders in Tirunelveli,
               construction company in Tirunelveli, house construction Tirunelveli,
               building contractors Tirunelveli, residential construction Tirunelveli,
