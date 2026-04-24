@@ -27,7 +27,7 @@ const Careers = () => {
         <meta name="robots" content="index, follow" />
 
         {/* // Canonical (fixed no www) */}
-        <link rel="canonical" href="https://markodraft.com/careers" />
+        {/* <link rel="canonical" href="https://markodraft.com/careers" /> */}
 
         {/* // Open Graph */}
         <meta property="og:type" content="website" />

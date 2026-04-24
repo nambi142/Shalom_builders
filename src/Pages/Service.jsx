@@ -52,7 +52,7 @@ const Service = () => {
           content="affordable construction, house construction India, renovation services, remodeling, plumbing services, electrical works, painting services, 3D design, architectural planning, commercial construction, residential construction"
         />
 
-        <link rel="canonical" href="https://markodraft.com/services" />
+        {/* <link rel="canonical" href="https://markodraft.com/services" /> */}
       </Helmet>
 
       {/* ---------- OUR SERVICES SECTION ---------- */}

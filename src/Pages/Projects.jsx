@@ -57,7 +57,7 @@ const Projects = () => {
 
         <meta name="robots" content="index, follow" />
 
-        <link rel="canonical" href="https://markodraft.com/projects" />
+        {/* <link rel="canonical" href="https://markodraft.com/projects" /> */}
 
         {/* ✅ Open Graph */}
         <meta property="og:type" content="website" />
