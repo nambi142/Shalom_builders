@@ -70,39 +70,21 @@ const About = () => {
       {/* SEO Optimization */}
       <Helmet>
         <title>
-          Discover our Journey as a Reliable Construction Company | Mark-O-Draft
+          Discover our Journey as a Reliable Construction Company | Markodraft
         </title>
 
         <meta
           name="description"
-          content="The team behind quality construction and interior projects at Mark-O-Draft. We provide affordable building solutions with expert guidance and free consultation in Tirunelveli and across Tamil Nadu."
+          content="The team behind quality construction and interior projects at Markodraft. We provide affordable building solutions with expert guidance and free consultation in Tirunelveli and across Tamil Nadu."
         />
-
-        <meta
-          name="keywords"
-          content="about markodraft, markodraft team, markodraft proprietor,
-              construction company tirunelveli about, who is markodraft,
-              markodraft builders team tirunelveli, Markodraft, Markodraft Builders, Markodraft Construction,
-              builders in Tirunelveli, best builders in Tirunelveli,
-              construction company in Tirunelveli, house construction Tirunelveli,
-              building contractors Tirunelveli, residential construction Tirunelveli,
-              commercial construction Tirunelveli, builders in Tamil Nadu,
-              construction company Tamil Nadu, house construction Tamil Nadu,
-              home renovation Tirunelveli, interior design Tirunelveli,
-              exterior construction services, carpentry services Tirunelveli,
-              low cost house construction Tirunelveli,
-              affordable builders Tirunelveli,
-              budget house construction Tamil Nadu,
-              independent house builders Tirunelveli"
-        />
-
+        
         <meta name="robots" content="index, follow" />
 
         <link rel="canonical" href="https://markodraft.com/about" />
 
         <meta
           property="og:title"
-          content="Discover our Journey as a Reliable Construction Company | Mark-O-Draft"
+          content="Discover our Journey as a Reliable Construction Company | Markodraft"
         />
 
         <meta
@@ -114,7 +96,7 @@ const About = () => {
         <meta property="og:url" content="https://markodraft.com/about" />
         <meta
           property="og:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/brand.jpeg"
         />
       </Helmet>
 
@@ -134,7 +116,7 @@ const About = () => {
           <div className="company-left">
             <h2>About</h2>
             <p>
-              At <strong>Mark-O-Draft</strong>, we are a trusted{" "}
+              At <strong>Markodraft</strong>, we are a trusted{" "}
               <strong>construction company in Tirunelveli</strong>, Tamil Nadu,
               delivering high-qulity residential, commercial, govenment,
               industrial, warehouse, and cold storage construction service
@@ -155,7 +137,7 @@ const About = () => {
           <div className="company-right">
             <img
               src="/img/about-us.jpg"
-              alt="Mark-O-Draft"
+              alt="Markodraft"
               className="company-img"
             />
           </div>
@@ -168,7 +150,7 @@ const About = () => {
           <h3 className="team-subtitle">Our Team</h3>
           <h2 className="team-title">Meet Our Professional Experts</h2>
           <p className="team-intro">
-            Our dedicated professionals are the backbone of Mark-O-Draft. With
+            Our dedicated professionals are the backbone of Markodraft. With
             years of experience and a commitment to excellence, our team ensures
             that every project is completed with precision, innovation, and
             trust. Together, we bring your vision to life.
@@ -191,7 +173,7 @@ const About = () => {
               overflow in every project we deliver.
             </p>
             <p className="team-description">
-              At Mark-O-Draft, we believe that true excellence is not just built
+              At Markodraft, we believe that true excellence is not just built
               with cement and steel — it is built with faith, honesty, and
               purpose. Lord Jesus inspires us to serve every client as we would
               serve Him — with humility, dedication, and a heart full of

@@ -13,6 +13,7 @@ import Gallery from "./Pages/Gallery";
 import UploadProjects from "./Pages/upload";
 import ScrollToTop from "./Components/ScrollToTop"; 
 import NotFound from "./Pages/NotFound";
+import SEOSchema from './components/SEO/SEOSchema';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/upload" element={<UploadProjects />} />
       </Routes>
       <Footer />
+      <SEOSchema />
     </div>
   );
 }

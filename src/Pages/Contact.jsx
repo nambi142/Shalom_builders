@@ -57,22 +57,6 @@ const Contact = () => {
           content="Contact Markodraft Builders for residential and commercial construction in Tirunelveli. Get free consultation, expert guidance, and affordable building packages starting from ₹1900."
         />
 
-        <meta
-          name="keywords"
-          content="Markodraft, Markodraft Builders, Markodraft Construction,
-              builders in Tirunelveli, best builders in Tirunelveli,
-              construction company in Tirunelveli, house construction Tirunelveli,
-              building contractors Tirunelveli, residential construction Tirunelveli,
-              commercial construction Tirunelveli, builders in Tamil Nadu,
-              construction company Tamil Nadu, house construction Tamil Nadu,
-              home renovation Tirunelveli, interior design Tirunelveli,
-              exterior construction services, carpentry services Tirunelveli,
-              low cost house construction Tirunelveli,
-              affordable builders Tirunelveli,
-              budget house construction Tamil Nadu,
-              independent house builders Tirunelveli, contact Markodraft Builders, construction consultation Tirunelveli, builders contact Tamil Nadu, house construction inquiry, interior design consultation, construction services contact"
-        />
-
         <meta name="robots" content="index, follow" />
 
         {/* // Canonical (fixed no www) */}
@@ -91,19 +75,7 @@ const Contact = () => {
         <meta property="og:url" content="https://markodraft.com/contact" />
         <meta
           property="og:image"
-          content="https://markodraft.com/img/logo.png"
-        />
-
-        {/* // Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Markodraft Builders" />
-        <meta
-          name="twitter:description"
-          content="Reach out for construction services and free consultation in Tirunelveli."
-        />
-        <meta
-          name="twitter:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/brand.jpeg"
         />
 
         {/* // Structured Data */}
@@ -117,7 +89,7 @@ const Contact = () => {
         "@type": "HomeAndConstructionBusiness",
         "name": "Markodraft Builders",
         "url": "https://markodraft.com",
-        "logo": "https://markodraft.com/img/logo.png",
+        "logo": "https://markodraft.com/img/brand.jpeg",
         "telephone": "+918190859587",
         "email": "markodraftindia@gmail.com",
         "priceRange": "₹₹",

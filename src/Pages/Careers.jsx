@@ -27,7 +27,7 @@ const Careers = () => {
         <meta name="robots" content="index, follow" />
 
         {/* // Canonical (fixed no www) */}
-        {/* <link rel="canonical" href="https://markodraft.com/careers" /> */}
+        <link rel="canonical" href="https://markodraft.com/careers" />
 
         {/* // Open Graph */}
         <meta property="og:type" content="website" />
@@ -42,21 +42,14 @@ const Careers = () => {
         <meta property="og:url" content="https://markodraft.com/careers" />
         <meta
           property="og:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/brand.jpeg"
         />
         <meta property="og:site_name" content="Markodraft Builders" />
         <meta property="og:locale" content="en_IN" />
 
-        {/* // Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers at Markodraft Builders" />
-        <meta
-          name="twitter:description"
-          content="Explore construction jobs and internships in Tirunelveli with Markodraft Builders."
-        />
         <meta
           name="twitter:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/brand.jpeg"
         />
 
         {/* // Structured Data */}
@@ -66,7 +59,7 @@ const Careers = () => {
       "@type": "Organization",
       "name": "Markodraft Builders",
       "url": "https://markodraft.com",
-      "logo": "https://markodraft.com/img/logo.png",
+      "logo": "https://markodraft.com/favicon-32x32.png",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61576484825469",
         "https://www.instagram.com/markodraftindia/?hl=en"

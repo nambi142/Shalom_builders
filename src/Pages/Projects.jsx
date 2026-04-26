@@ -57,7 +57,7 @@ const Projects = () => {
 
         <meta name="robots" content="index, follow" />
 
-        {/* <link rel="canonical" href="https://markodraft.com/projects" /> */}
+        <link rel="canonical" href="https://markodraft.com/projects" />
 
         {/* ✅ Open Graph */}
         <meta property="og:type" content="website" />
@@ -72,24 +72,14 @@ const Projects = () => {
         <meta property="og:url" content="https://markodraft.com/projects" />
         <meta
           property="og:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/brand.jpeg"
         />
         <meta property="og:site_name" content="Markodraft Builders" />
         <meta property="og:locale" content="en_IN" />
 
-        {/* ✅ Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Markodraft Projects | Construction Works in Tirunelveli"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore completed construction projects including homes, interiors, and commercial buildings by Markodraft Builders."
-        />
         <meta
           name="twitter:image"
-          content="https://markodraft.com/img/logo.png"
+          content="https://markodraft.com/img/favicon_io/favicon-32x32.png"
         />
 
         {/* ✅ Structured Data */}
@@ -99,8 +89,8 @@ const Projects = () => {
       "@type": "HomeAndConstructionBusiness",
       "name": "Markodraft Builders",
       "url": "https://markodraft.com",
-      "logo": "https://markodraft.com/img/logo.png",
-      "image": "https://markodraft.com/img/logo.png",
+      "logo": "https://markodraft.com/favicon-32x32.png",
+      "image": "https://markodraft.com/favicon-32x32.png",
       "description": "Markodraft Builders provides residential and commercial construction services in Tirunelveli including interiors, electrical, masonry and plumbing works.",
       "areaServed": {
         "@type": "City",
@@ -138,7 +128,7 @@ const Projects = () => {
         <div className="projects-container">
           <h2 className="projects-heading">Our Recent Works</h2>
           <p className="projects-intro">
-            At Mark-O-Draft, we have successfully completed a variety of
+            At Markodraft, we have successfully completed a variety of
             residential, commercial, and real estate projects. Each project
             reflects our commitment to quality, design, and customer
             satisfaction.

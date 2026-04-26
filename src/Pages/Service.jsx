@@ -52,7 +52,7 @@ const Service = () => {
           content="affordable construction, house construction India, renovation services, remodeling, plumbing services, electrical works, painting services, 3D design, architectural planning, commercial construction, residential construction"
         />
 
-        {/* <link rel="canonical" href="https://markodraft.com/services" /> */}
+        <link rel="canonical" href="https://markodraft.com/services" />
       </Helmet>
 
       {/* ---------- OUR SERVICES SECTION ---------- */}
@@ -72,7 +72,7 @@ const Service = () => {
             <h4 className="services-subtitle">What We Offer</h4>
             <h2 className="services-title">Our Services</h2>
             <p className="services-intro">
-              At Mark-O-Draft, we provide a wide range of professional
+              At Markodraft, we provide a wide range of professional
               construction and design solutions. From interior decoration to
               full-scale commercial projects, we ensure quality, trust, and
               modern designs. Premium home construction services starting form
