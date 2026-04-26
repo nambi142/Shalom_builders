@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "../Css/Service.css";
 import {
@@ -37,30 +38,24 @@ const Service = () => {
   return (
     <div>
       <Helmet>
-        <title>
-          Affordable Construction & Renovation Services | Electrical | Plumbing
-          | Paints
-        </title>
+        <title>Our Services | Markodraft Builders</title>
 
         <meta
           name="description"
-          content="Affordable construction services starting from ₹1900/sq.ft. for residential, commercial, industrial, warehouse & cold storage buildings. Premium quality renovation, plumbing, electrical, painting & modern design solutions with free home appliances."
+          content="Affordable construction services in Tirunelveli including residential, commercial, renovation, plumbing, electrical and design solutions."
         />
 
-        <meta
-          name="keywords"
-          content="affordable construction, house construction India, renovation services, remodeling, plumbing services, electrical works, painting services, 3D design, architectural planning, commercial construction, residential construction"
-        />
-
-        <link rel="canonical" href="https://markodraft.com/services" />
+        <link rel="canonical" href="https://markodraft.com/service" />
       </Helmet>
 
       {/* ---------- OUR SERVICES SECTION ---------- */}
-      <section class="page-hero">
-        <div class="hero-content">
-          <h1 class="page-title">OUR SERVICES</h1>
-          <p class="breadcrumb">
-            <a href="/">Home</a> » <span>Our Service</span>
+      <section className="page-hero">
+        <div className="hero-content">
+          <h1 className="page-title">OUR SERVICES</h1>
+          <p className="breadcrumb">
+            <Link to="/" className="projects-home-link">
+              Home
+            </Link> » <span>Our Service</span>
           </p>
         </div>
       </section>
