@@ -6,7 +6,7 @@ const SEOSchema = () => {
     "@type": "LocalBusiness",
     "name": "Markodraft Builders & Constructions",
     "description": "Specializes in Builders and Construction services",
-    "url": "https://markodraftbuilders.com", 
+    "url": "https://markodraft.com", 
     "telephone": ["+918190859587", "+919345732237"],
     "founder": {
       "@type": "Person",
