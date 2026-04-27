@@ -67,37 +67,51 @@ const AchievementCard = ({ icon, target, suffix, label }) => {
 const About = () => {
   return (
     <div className="about-wrapper">
-      {/* SEO Optimization */}
       <Helmet>
         <title>
-          Discover our Journey as a Reliable Construction Company | Markodraft
+          About Markodraft Builders | Construction Company in Tirunelveli
         </title>
 
         <meta
           name="description"
-          content="The team behind quality construction and interior projects at Markodraft. We provide affordable building solutions with expert guidance and free consultation in Tirunelveli and across Tamil Nadu."
+          content="Learn about Markodraft Builders, a trusted construction company in Tirunelveli offering quality building solutions and expert guidance."
         />
-        
+
         <meta name="robots" content="index, follow" />
 
         <link rel="canonical" href="https://markodraft.com/about" />
 
         <meta
           property="og:title"
-          content="Discover our Journey as a Reliable Construction Company | Markodraft"
+          content="About Markodraft Builders | Tirunelveli"
         />
-
         <meta
           property="og:description"
-          content="Affordable building solutions with expert guidance and free consultation. Trusted construction company in Tirunelveli."
+          content="Trusted builders in Tirunelveli providing residential and commercial construction services."
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://markodraft.com/about" />
         <meta
           property="og:image"
           content="https://markodraft.com/img/brand.jpeg"
         />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Markodraft Builders",
+              "url": "https://markodraft.com/about",
+              "description": "About Markodraft Builders, a trusted construction company in Tirunelveli.",
+              "foundingLocation": {
+                "@type": "Place",
+                "name": "Tirunelveli"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

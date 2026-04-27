@@ -8,64 +8,46 @@ const Careers = () => {
   return (
     <div>
       <Helmet>
-        {/* // Title */}
-        <title>
-          Construction Careers in Tirunelveli | Join Markodraft Builders Team
-        </title>
+        <title>Construction Jobs in Tirunelveli | Markodraft Careers</title>
 
-        {/* // Basic SEO */}
         <meta
           name="description"
-          content="Explore construction jobs and internships in Tirunelveli with Markodraft Builders. Join our team for opportunities in civil engineering, design, and building construction."
-        />
-
-        <meta
-          name="keywords"
-          content="construction jobs Tirunelveli, careers Markodraft Builders, civil engineering jobs Tamil Nadu, construction internships Tirunelveli, building construction careers, join construction company"
+          content="Looking for construction jobs in Tirunelveli? Join Markodraft Builders for careers in civil engineering, site supervision, and design."
         />
 
         <meta name="robots" content="index, follow" />
 
-        {/* // Canonical (fixed no www) */}
         <link rel="canonical" href="https://markodraft.com/careers" />
 
-        {/* // Open Graph */}
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Construction Careers in Tirunelveli | Markodraft Builders"
         />
         <meta
           property="og:description"
-          content="Join Markodraft Builders for careers in construction, civil engineering, and design. Grow your career in Tirunelveli."
+          content="Apply for construction jobs and internships at Markodraft Builders in Tirunelveli."
         />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://markodraft.com/careers" />
         <meta
           property="og:image"
           content="https://markodraft.com/img/brand.jpeg"
         />
-        <meta property="og:site_name" content="Markodraft Builders" />
-        <meta property="og:locale" content="en_IN" />
 
-        <meta
-          name="twitter:image"
-          content="https://markodraft.com/img/brand.jpeg"
-        />
-
-        {/* // Structured Data */}
-        <script type="application/ld+json">{`
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Markodraft Builders",
-      "url": "https://markodraft.com",
-      "logo": "https://markodraft.com/favicon-32x32.png",
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61576484825469",
-        "https://www.instagram.com/markodraftindia/?hl=en"
-      ]
-    }
-  `}</script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Markodraft Builders",
+              "url": "https://markodraft.com",
+              "description": "Construction company hiring engineers and workers in Tirunelveli.",
+              "sameAs": [
+                "https://www.instagram.com/markodraftindia"
+              ]
+            }
+          `}
+        </script>
       </Helmet>
 
       <section className="careers-hero">

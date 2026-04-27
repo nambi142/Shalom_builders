@@ -45,76 +45,53 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        {/* // Title */}
         <title>
-          Contact Markodraft Builders | Free Construction Consultation
-          Tirunelveli
+          Contact Markodraft Builders | Tirunelveli Construction Company
         </title>
 
-        {/* // Basic SEO */}
         <meta
           name="description"
-          content="Contact Markodraft Builders for residential and commercial construction in Tirunelveli. Get free consultation, expert guidance, and affordable building packages starting from ₹1900."
+          content="Contact Markodraft Builders for house construction, renovation and design services in Tirunelveli. Get a free consultation today."
         />
 
         <meta name="robots" content="index, follow" />
 
-        {/* // Canonical (fixed no www) */}
         <link rel="canonical" href="https://markodraft.com/contact" />
 
-        {/* // Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Contact Markodraft Builders | Construction Experts Tirunelveli"
-        />
+        <meta property="og:title" content="Contact Markodraft Builders" />
         <meta
           property="og:description"
-          content="Get in touch with Markodraft Builders for residential, commercial, and interior construction services in Tirunelveli."
+          content="Get in touch with Markodraft Builders for construction services in Tirunelveli."
         />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://markodraft.com/contact" />
         <meta
           property="og:image"
           content="https://markodraft.com/img/brand.jpeg"
         />
 
-        {/* // Structured Data */}
-        <script type="application/ld+json">{`
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact Markodraft Builders",
-      "url": "https://markodraft.com/contact",
-      "mainEntity": {
-        "@type": "HomeAndConstructionBusiness",
-        "name": "Markodraft Builders",
-        "url": "https://markodraft.com",
-        "logo": "https://markodraft.com/img/brand.jpeg",
-        "telephone": "+918190859587",
-        "email": "markodraftindia@gmail.com",
-        "priceRange": "₹₹",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "9, Nachinikinyar Street, Kokkirakulam, Palayamkottai",
-          "addressLocality": "Tirunelveli",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "627009",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 8.7139,
-          "longitude": 77.7567
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+918190859587",
-          "contactType": "customer service",
-          "availableLanguage": ["English", "Tamil"]
-        }
-      }
-    }
-  `}</script>
+        <script type="application/ld+json">
+         {`
+           {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact Markodraft Builders",
+              "url": "https://markodraft.com/contact",
+              "mainEntity": {
+                "@type": "HomeAndConstructionBusiness",
+                "name": "Markodraft Builders",
+                "telephone": "+918190859587",
+                "email": "markodraftindia@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tirunelveli",
+                  "addressRegion": "Tamil Nadu",
+                  "addressCountry": "IN"
+                }
+              }
+            }
+         `}     
+        </script>
       </Helmet>
 
       <section className="contact-hero">

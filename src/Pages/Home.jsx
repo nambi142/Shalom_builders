@@ -38,38 +38,60 @@ const Home = () => {
     <div>
       {/* SEO Optimization */}
       <Helmet>
-        {/* Title (MOST IMPORTANT) */}
         <title>
           Markodraft Builders & Construction | Tirunelveli
         </title>
 
-        {/* Meta Description */}
         <meta
           name="description"
-          content="Markodraft Builders is a trusted construction company in Tirunelveli offering house construction, renovation, interior and exterior design services across Tamil Nadu. Affordable, reliable and quality-focused builders."
+          content="Markodraft Builders is a trusted construction company in Tirunelveli offering house construction, renovation, interior and exterior design services across Tamil Nadu."
         />
 
         <meta name="robots" content="index, follow" />
 
-        {/* Correct Canonical URL */}
         <link rel="canonical" href="https://markodraft.com/" />
 
-        {/* Open Graph SEO */}
         <meta
           property="og:title"
-          content="Markodraft Builders | Trusted Construction Company in Tirunelveli"
+          content="Best Builders in Tirunelveli | Markodraft Builders"
         />
-        
         <meta
           property="og:description"
-          content="Looking for reliable builders in Tirunelveli? Markodraft Builders offers complete construction, renovation, and interior services across Tamil Nadu."
+          content="Trusted construction company in Tirunelveli for house building, renovation, and interior works."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://markodraft.com/" />
+        <meta
+          property="og:image"
+          content="https://markodraft.com/img/brand.jpeg"
         />
 
-        <meta property="og:type" content="website" />
-
-        <meta property="og:url" content="https://markodraft.com/" />
-
-        <meta property="og:image" content="https://markodraft.com/img/brand.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Markodraft Builders",
+              "url": "https://markodraft.com",
+              "logo": "https://markodraft.com/img/brand.jpeg",
+              "image": "https://markodraft.com/img/brand.jpeg",
+              "description": "Trusted construction company in Tirunelveli offering house construction, renovation and interior services.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tirunelveli",
+                "addressRegion": "Tamil Nadu",
+                "addressCountry": "IN"
+              },
+              "areaServed": "Tirunelveli",
+              "telephone": "+918190859587",
+              "sameAs": [
+                "https://www.instagram.com/markodraftindia",
+                "https://www.facebook.com/profile.php?id=61576484825469"
+              ]
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* ---------- HERO VIDEO ---------- */}

@@ -38,14 +38,54 @@ const Service = () => {
   return (
     <div>
       <Helmet>
-        <title>Our Services | Markodraft Builders</title>
+        <title>
+          Construction Services in Tirunelveli | Markodraft Builders
+        </title>
 
         <meta
           name="description"
-          content="Affordable construction services in Tirunelveli including residential, commercial, renovation, plumbing, electrical and design solutions."
+          content="Markodraft Builders offers house construction, renovation, plumbing, electrical and interior design services in Tirunelveli."
         />
 
+        <meta name="robots" content="index, follow" />
+
         <link rel="canonical" href="https://markodraft.com/service" />
+
+        <meta
+          property="og:title"
+          content="Construction Services | Markodraft Builders"
+        />
+        <meta
+          property="og:description"
+          content="Complete building and renovation services in Tirunelveli."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://markodraft.com/service" />
+        <meta
+          property="og:image"
+          content="https://markodraft.com/img/brand.jpeg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Construction Services",
+              "provider": {
+                "@type": "HomeAndConstructionBusiness",
+                "name": "Markodraft Builders",
+                "url": "https://markodraft.com"
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "Tirunelveli"
+              },
+              "description": "House construction, renovation, plumbing, electrical and interior design services in Tirunelveli."
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* ---------- OUR SERVICES SECTION ---------- */}
@@ -55,7 +95,8 @@ const Service = () => {
           <p className="breadcrumb">
             <Link to="/" className="projects-home-link">
               Home
-            </Link> » <span>Our Service</span>
+            </Link>{" "}
+            » <span>Our Service</span>
           </p>
         </div>
       </section>
